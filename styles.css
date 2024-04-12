@@ -1,16 +1,15 @@
 @import url(https://fonts.googleapis.com/css2?family={font_family}&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=labrada:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);
 
+@import url(https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
 
 body {
-    background-color: rgb(158, 149, 225);
-    font-family: sans-serif, 'labrada';
+    background-color: rgb(184, 184, 233);
+    font-family: "Labrada", serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #121d28;
 }
 
 .navbar {
