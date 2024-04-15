@@ -4,16 +4,21 @@
 @import url(https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
 
 body {
-    background-color: rgb(184, 184, 233);
+    background-color: rgb(210, 210, 228);
     font-family: "Labrada", serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #121d28;
+    color: #07223c;
+}
+
+.divider {
+    height: 5px;
+    background: linear-gradient(to right, #ADD8E6 5%, #87CEEB 17%, #4682B4 40%, #0000FF 85%, #191970 95%);
 }
 
 .navbar {
-    background-color: #7f9ebd;
+    background-color: #95acca;
     padding: 10px 0;
 }
 
@@ -42,7 +47,7 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #000;
+    color: #534040;
 }
 
 .nav-link:hover {
