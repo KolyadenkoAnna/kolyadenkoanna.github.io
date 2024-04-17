@@ -70,11 +70,6 @@ nav a {
     height: 300px; /* задає висоту блоку, можна встановити будь-яку потрібну вам висоту */
 }
 
-.divider {
-    height: 15px;
-    background: linear-gradient(to right, #ADD8E6 5%, #87CEEB 17%, #4682B4 40%, #0000FF 85%, #191970 95%);
-}
-
 .navbar {
     background-color: #d7dfea;
     padding: 10px 0;
@@ -101,10 +96,6 @@ nav a {
 
 .bg-dark{
     background-color:#111 !important
-}
-
-.divider {
-    background-attachment: fixed !important;
 }
 
 .hero, .divider {
@@ -211,6 +202,15 @@ img {
 .divider .container {
     margin-right: auto; /* Автоматичний відступ справа */
     margin-left: auto; /* Автоматичний відступ зліва */
+}
+
+.divider {
+    background-attachment: fixed !important;
+}
+
+.divider {
+    height: 15px;
+    background: linear-gradient(to right, #ADD8E6 5%, #87CEEB 17%, #4682B4 40%, #0000FF 85%, #191970 95%);
 }
 
  /* Footer*/
