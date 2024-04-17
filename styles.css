@@ -215,51 +215,85 @@ img {
 
  /* Footer*/
 
-footer {
+.footer {
     background-color: #1b1e21;
     padding: 50px 0; /* Встановлюємо верхній та нижній відступи */
 }
 
-footer h3 {
+.footer h3 {
     color: #877a7a;
 }
 
-footer ul {
+.footer ul {
     list-style: none;
     padding: 0;
 }
 
-footer ul li {
+.footer ul li {
     margin-bottom: 10px;
 }
 
-footer ul li a {
+.footer ul li a {
     color: #8c8484;
     text-decoration: none;
 }
 
-footer form {
+.footer form {
     margin-top: 10px;
 }
 
-footer input[type="email"],
+.footer input[type="email"],
 footer button {
     padding: 10px;
     border: none;
     border-radius: 5px;
 }
 
-footer input[type="email"] {
+.footer input[type="email"] {
     width: 20%;
 }
 
-footer button {
+.footer button {
     background-color: #51585f;
     color: #fff;
     cursor: pointer;
 }
 
-footer p {
+.footer p {
     color: #e6d7d7; /* Встановлюємо колір тексту */
 }
 
+/* Таблиця */
+
+.table {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    border-collapse: collapse;
+}
+
+.th, td {
+    border: 1px solid #907676;
+    border-width: 0;
+    border-color: inherit;
+    text-align: left;
+    padding: 8px;
+}
+
+.th {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    color-scheme: rgb (161, 166);
+    font-weight: 700;
+    text-align: left;
+}
+
+.tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.img {
+    max-width: 10px;
+    height: auto;
+}
