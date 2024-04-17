@@ -3,13 +3,67 @@
 @import url(https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
 
 body {
-    background-color: rgb(210, 210, 228);
+    background-color: rgb(200, 200, 209);
     font-family: "Labrada", serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     color: #07223c;
+    margin: 0;
 }
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+    font-weight:700;
+    line-height:1.2;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+nav a {
+    display: block;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Можна змінити, якщо треба вирівняти по-іншому */
+}
+
+ /* Горизонтальне меню */
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-right: 10px; /* Роздільник між пунктами меню */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000; /* Колір тексту */
+    padding: 5px 10px; /* Відступи внутрішнього контенту */
+}
+
+.nav-link:hover {
+    color: #999; /* Колір тексту при наведенні */
+}
+
+
+.nav-item {
+    margin-bottom: 10px; /* Додаємо відступ між елементами */
+}
+
 .hero {
     background-size: cover; /* збільшує або зменшує зображення так, щоб воно повністю покривало блок */
     background-position: center; /* центрує зображення у блоку */
@@ -17,12 +71,12 @@ body {
 }
 
 .divider {
-    height: 5px;
+    height: 15px;
     background: linear-gradient(to right, #ADD8E6 5%, #87CEEB 17%, #4682B4 40%, #0000FF 85%, #191970 95%);
 }
 
 .navbar {
-    background-color: #95acca;
+    background-color: #d7dfea;
     padding: 10px 0;
 }
 
@@ -45,6 +99,39 @@ body {
     display: flex;
 }
 
+.bg-dark{
+    background-color:#111 !important
+}
+
+.divider {
+    background-attachment: fixed !important;
+}
+
+.hero, .divider {
+    background-repeat: no-repeat;
+    background-position: center center !important;
+    background-size: cover !important;
+    padding: 4rem 0 2rem;
+}
+
+.social-icon{
+    background:#d0c9ef;
+    color:#212529;
+    font-size:1.5rem;
+    text-decoration:none;
+    width: 34px;
+    height: 34px;
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.img-fluid {
+    height: auto;
+    max-width: 100%;
+}
 .nav-item {
     margin-right: 20px;
 }
@@ -77,3 +164,102 @@ body {
 .subtitle {
     font-size: 1.2rem;
 }
+
+.border-top {
+    border-top: #212529 5px solid;
+}
+
+    /* Загальні стилі для блоку Hero */
+    #hero {
+        padding: 100px 0; /* Поправте відступи, відповідно до вашого дизайну */
+    }
+
+    /* Стилі для зображення фону в секції Hero */
+    .hero {
+        background-size: cover;
+        background-position: center;
+        padding: 50px 0; /* Поправте відступи, відповідно до вашого дизайну */
+    }
+
+    /* Стилі для текстового контенту в секції Hero */
+    .hero-heading {
+        font-size: 36px;
+        color: #242121; /* Колір тексту */
+        margin-bottom: 20px; /* Відступ від заголовку до іншого контенту */
+    }
+
+    .subtitle {
+        color: #4c4646; /* Колір підзаголовку */
+    }
+
+    .btn {
+        background-color: #7fb3eb; /* Колір кнопки */
+        color: #f4ebeb; /* Колір тексту кнопки */
+        padding: 10px 20px; /* Відступи, відповідно до дизайну */
+        border-radius: 10px; /* Закруглені кути кнопки */
+        text-decoration: none; /* Видалення підчеркування з посилань */
+        display: inline-block; /* Зробити кнопку блочним елементом */
+    }
+
+    /* Divider*/
+
+.divider {
+    padding-top: 5px; /* Верхній відступ */
+    padding-bottom: 100px; /* Нижній відступ */
+}
+
+.divider .container {
+    margin-right: auto; /* Автоматичний відступ справа */
+    margin-left: auto; /* Автоматичний відступ зліва */
+}
+
+ /* Footer*/
+
+footer {
+    background-color: #1b1e21;
+    padding: 50px 0; /* Встановлюємо верхній та нижній відступи */
+}
+
+footer h3 {
+    color: #877a7a;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #8c8484;
+    text-decoration: none;
+}
+
+footer form {
+    margin-top: 10px;
+}
+
+footer input[type="email"],
+footer button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer input[type="email"] {
+    width: 20%;
+}
+
+footer button {
+    background-color: #51585f;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer p {
+    color: #e6d7d7; /* Встановлюємо колір тексту */
+}
+
