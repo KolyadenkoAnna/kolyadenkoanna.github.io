@@ -3,30 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Метатег для опису сторінки українською мовою -->
+    <title>Головна сторінка</title>
     <meta name="description" content="Головна сторінка персонального сайту">
-
-    <!-- Метатег для опису сторінки англійською мовою -->
-    <meta name="description" content="Main page of personal website">
-
-    <!-- Метатеги з ключовими словами українською та англійською мовами -->
     <meta name="keywords" content="сайт, веб-сторінка, персональний, web page, personal website">
-
-    <!-- Метатег, що забороняє роботам перекладати сторінку -->
     <meta name="google" content="notranslate">
-    <!--Теги-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна</title>
     <link rel="stylesheet" href="/css/app/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-FqQmUWBeLSdICwWp3Gouc7Wr/hfHnyX9eLZIKjnPlRjvKJgx63n/BnDhHz8a6N+xBp2M5vQfnbZByKkeHfcmDw==" crossorigin="anonymous" />
-    <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Головна сторінка</title> <!-- Повний опис змісту сторінки -->
-
 </head>
 <body>
     <!-- Заголовок сторінки -->
@@ -34,8 +20,7 @@
         <h1>Mercury - магазин зброї</h1>
     </header>
 
-    <!-- Навігаційна панель -->  
- 
+    <!-- Навігаційна панель -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="navbar-brand"></a>
@@ -51,6 +36,8 @@
             </div>
         </div>
     </nav>
+
+    <!-- Навігаційні кнопки -->
     <nav>
         <div class="navbar-nav">
             <a class="nav-item" href="cart.html"><i class="nav-link text-uppercase fas fa-dolly-flatbed"></i></a>
@@ -58,119 +45,81 @@
             <a class="nav-item" href="login.html"><i class="nav-link text-uppercase far fa-user"></i></a>
         </div>
     </nav>
-</body>
 
-<!-- Hero slider-->
-<section>
-    <div class="container" id="hero">
-        <div class="hero" style="background: url(image/6image.jpg)">
+    <!-- Hero slider-->
+    <section>
+        <div class="container" id="hero">
+            <div class="hero" style="background: url(image/6image.jpg)">
+                <div class="row text-center">
+                    <div class="col">
+                        <p class="h6 text-uppercase text-muted">Summer 2024</p>
+                        <h1 class="hero-heading title">The best weapons collection</h1>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-muted subtitle">Захисти своє право на безпеку: будь завжди попереду</p>
+                            </div>
+                        </div>
+                        <a class="btn text" href="shop.html">Всі види зброї</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New arrivals-->
+    <section class="py-5">
+        <div class="container">
+            <header class="text-center">
+                <h2 class="">New arrivals</h2>
+                <p class="text-muted">Browse the Newest Products</p>
+            </header>
+            <div class="container" id="newArrivals">
+                <div class="wrapper">
+                    <div class="product">
+                        <span class="badge">New Arrival</span>
+                        <a href="detail.html">
+                            <img class="img-fluid" src="image/1image.jpg" alt="Round grey hanging decor">
+                        </a>
+                    </div>
+                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Round grey hanging decor</a></h6>
+                    <p class="text-center text-muted">$22.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider section-->
+    <section class="divider" style="background: url(image/1image.jpg)">
+        <div class="container" id="divider">
             <div class="row text-center">
-                <!-- Блок col зліва -->
-                <div class="col">
-                    <p class="h6 text-uppercase text-muted">Summer 2024</p>
+                <div class="col-md-8 offset-md-4">
+                    <p class="h6 text-uppercase text-muted">SHET</p>
                     <h1 class="hero-heading title">The best weapons collection</h1>
                     <div class="row">
                         <div class="col">
                             <p class="text-muted subtitle">Захисти своє право на безпеку: будь завжди попереду</p>
                         </div>
                     </div>
-                    <a class="btn text" href="shop.html">Всі види зброї</a>
+                    <a class="btn text" href="shop.html">Shop now</a>
                 </div>
             </div>
         </div>
-    </div>        
-</section>
-
-    <!-- New arrivals-->
-    <section class="py-5">
-        <div class="container">
-          
-          <header class="text-center">
-            <h2 class="">New arrivals</h2>
-            <p class="text-muted">Browse the Newest Products</p>
-          </header>
-          
-          <div class="container" id="newArrivals">
-            <div class="wrapper">
-              <div class="">
-                
-                <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
-                  <img class="img-fluid" src="image/1image.jpg" alt="Round grey hanging decor">
-                </a>
-                 
-                </div>
-  
-                <h6 class="text-center"><a class="reset-anchor" href="detail.html">Round grey hanging decor</a></h6>
-                <p class="text-center text-muted">$22.00</p>
-              </div>
-              
-            </div>
-            <!-- prev next -->
-            
-          </div>
-        </div>
-      </section>
-
-<!-- Divider section-->
-<section class="divider" style="background: url(image/1image.jpg)">
-    <div class="container" id="divider">
-        <div class="row text-center">
-            <div class="col-md-8 offset-md-4"> <!-- Додали класи Bootstrap для вирівнювання -->
-                <p class="h6 text-uppercase text-muted">SHET</p>
-                <h1 class="hero-heading title">The best weapons collection</h1>
-                <div class="row">
-                    <div class="col">
-                        <p class="text-muted subtitle">Захисти своє право на безпеку: будь завжди попереду</p>
-                    </div>
-                </div>
-                <a class="btn text" href="shop.html">Shop now</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Майбутні заготовки Блок презентації -->
-    <section>
-
     </section>
-
-    <!-- Галерея списку товарів -->
-    <section>
-
-    </section>
-
-    <!-- Горизонтальна лінія -->
-   <hr style="margin-top: 20px;">
 
     <!-- Підвал сторінки -->
-    <div class="col">
-        <div>
-            <a class="social-icon" href="#"><i class="fab fa-facebook"></i></a>
-        </div>
-        <div>
-            <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-        <div>
-            <a class="social-icon" href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-        <div>
-            <a class="social-icon" href="#"><i class="fab fa-google"></i></a>
-        </div>
-    </div>    
-        
     <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h3>Підписка</h3>
-                        <p></p>
-                        <form>
-                            <input type="email" placeholder="Ваш email">
-                            <button type="submit">Підписатися</button>
-                        </form>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Підписка</h3>
+                    <p></p>
+                    <form>
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit">Підписатися</button>
+                    </form>
                 </div>
             </div>
+        </div>
         <p>Mercury &copy; 2024.</p>
     </footer>
 </body>

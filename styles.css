@@ -1,14 +1,12 @@
-@import url(https://fonts.googleapis.com/css2?family={font_family}&display=swap);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);
-@import url(https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(149, 149, 172);
-    font-family: "Labrada", serif;
+    font-family: "Labrada", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -17,80 +15,54 @@ body {
     margin: 0;
 }
 
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
-    font-weight:700;
-    line-height:1.2;
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: 700;
+    line-height: 1.2;
     margin-top: 0;
     margin-bottom: .5rem;
 }
 
-h6,.h6{
-    font-size:1rem
+h6, .h6 {
+    font-size: 1rem;
 }
 
-/* text */
-.text-center{
-    text-align:center !important
+.text-center {
+    text-align: center !important;
 }
 
 .text-uppercase {
-    text-transform:uppercase !important;
-    letter-spacing:0.1em;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em;
 }
 
 .text-muted {
-    color:#6c757d !important;
-}
-
-nav a {
-    display: block;
+    color: #6c757d !important;
 }
 
 .navbar-nav {
     display: flex;
     flex-direction: column;
-    align-items: left; /* Можна змінити, якщо треба вирівняти по-іншому */
+    align-items: left;
 }
 
- /* Горизонтальне меню */
-
-.navbar-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+.navbar-nav .nav-item {
+    margin-right: 10px;
 }
 
-.navbar-nav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-item {
-    margin-right: 10px; /* Роздільник між пунктами меню */
-}
-
-.nav-link {
+.navbar-nav .nav-link {
     text-decoration: none;
-    color: #000; /* Колір тексту */
-    padding: 5px 10px; /* Відступи внутрішнього контенту */
+    color: #000;
+    padding: 5px 10px;
 }
 
-.nav-link:hover {
-    color: #999; /* Колір тексту при наведенні */
-}
-
-
-.nav-item {
-    margin-bottom: 10px; /* Додаємо відступ між елементами */
+.navbar-nav .nav-link:hover {
+    color: #999;
 }
 
 .hero {
-    background-size: cover; /* збільшує або зменшує зображення так, щоб воно повністю покривало блок */
-    background-position: center; /* центрує зображення у блоку */
-    height: 300px; /* задає висоту блоку, можна встановити будь-яку потрібну вам висоту */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .navbar {
@@ -98,41 +70,11 @@ nav a {
     padding: 10px 0;
 }
 
-.navbar-brand {
+.social-icon {
+    background: #f3f3f3;
+    color: #212529;
+    font-size: 1.5rem;
     text-decoration: none;
-}
-
-.navbar-brand:hover {
-    text-decoration: none;
-}
-
-.navbar-wrapper {
-    display: flex;
-}
-
-.navbar-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.bg-dark{
-    background-color:#111 !important
-}
-
-.hero, .divider {
-    background-repeat: no-repeat;
-    background-position: center center !important;
-    background-size: cover !important;
-    padding: 4rem 0 2rem;
-}
-
-.social-icon{
-    background:#f3f3f3;
-    color:#212529;
-    font-size:1.5rem;
-    text-decoration:none;
     width: 34px;
     height: 34px;
     display: block;
@@ -140,118 +82,29 @@ nav a {
 
 img {
     vertical-align: middle;
-}
-
-.img-fluid {
-    height: auto;
     max-width: 100%;
-}
-.nav-item {
-    margin-right: 20px;
+    height: auto;
 }
 
-.nav-link {
-    text-decoration: none;
-    color: #534040;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-}
-
-.text-uppercase {
-    text-transform: uppercase;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-muted {
-    color: #6c757d;
-}
-
-.hero-heading {
-    font-size: 3rem;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-}
-
-.border-top {
-    border-top: #212529 5px solid;
-}
-
-    /* Загальні стилі для блоку Hero */
-    .hero {
-        padding: 100px 0; /* Поправте відступи, відповідно до вашого дизайну */
-    }
-
-    /* Стилі для зображення фону в секції Hero */
-    .hero {
-        background-size: cover;
-        background-position: center;
-        padding: 50px 0; /* Поправте відступи, відповідно до вашого дизайну */
-    }
-    
-    /* Стилі для текстового контенту в секції Hero */
-    .hero-heading {
-        font-size: 36px;
-        color: #242121; /* Колір тексту */
-        margin-bottom: 20px; /* Відступ від заголовку до іншого контенту */
-    }
-
-    .subtitle {
-        color: #4c4646; /* Колір підзаголовку */
-    }
-
-    .btn {
-        background-color: #7fb3eb; /* Колір кнопки */
-        color: #f4ebeb; /* Колір тексту кнопки */
-        padding: 10px 20px; /* Відступи, відповідно до дизайну */
-        border-radius: 10px; /* Закруглені кути кнопки */
-        text-decoration: none; /* Видалення підчеркування з посилань */
-        display: inline-block; /* Зробити кнопку блочним елементом */
-    }
-
-    #newArrivals {
-        background-image: url("image/1image.jpg");
-        background-repeat: no-repeat; /* Заборона повторення зображення */
-        background-size: contain; /* Розмір фонового зображення, щоб воно вміщалося в контейнер */
-        background-position: center; /* Центрування фону */
-        padding: 20px; /* При необхідності встановіть відступи */
-    }
-    
-    /* Divider*/
-
-.divider {
-    padding-top: 5px; /* Верхній відступ */
-    padding-bottom: 100px; /* Нижній відступ */
-}
-
-.divider .container {
-    margin-right: auto; /* Автоматичний відступ справа */
-    margin-left: auto; /* Автоматичний відступ зліва */
+#newArrivals {
+    background-image: url("image/1image.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 20px;
 }
 
 .divider {
+    padding-top: 5px;
+    padding-bottom: 100px;
     background-attachment: fixed !important;
-}
-
-.divider {
     height: 5px;
     background: linear-gradient(to right, #ADD8E6 5%, #87CEEB 17%, #4682B4 40%, #0000FF 85%, #191970 95%);
 }
 
- /* Footer*/
-
 .footer {
     background-color: #1b1e21;
-    padding: 50px 0; /* Встановлюємо верхній та нижній відступи */
-}
-
-.footer h3 {
+    padding: 50px 0;
     color: #877a7a;
 }
 
@@ -291,10 +144,8 @@ footer button {
 }
 
 .footer p {
-    color: #e6d7d7; /* Встановлюємо колір тексту */
+    color: #e6d7d7;
 }
-
-/* Таблиця */
 
 .table {
     width: 100%;
@@ -304,7 +155,7 @@ footer button {
     border-collapse: collapse;
 }
 
-.th, td {
+.th, .td {
     border: 1px solid #907676;
     border-width: 0;
     border-color: inherit;
@@ -315,7 +166,6 @@ footer button {
 .th {
     background-color: #f2f2f2;
     padding: 1rem;
-    color-scheme: rgb (161, 166);
     font-weight: 700;
     text-align: left;
 }
