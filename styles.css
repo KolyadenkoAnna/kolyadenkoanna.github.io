@@ -39,6 +39,14 @@ h6, .h6 {
     color: #6c757d !important;
 }
 
+.block {
+    margin-top: 20px; /* Відступ зверху */
+    margin-right: 20px; /* Відступ справа */
+    margin-bottom: 15px; /* Відступ знизу */
+    margin-left: 30px; /* Відступ зліва */
+  }
+  
+
 .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -62,7 +70,7 @@ h6, .h6 {
 .hero {
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 400px;
 }
 
 .navbar {
@@ -71,7 +79,7 @@ h6, .h6 {
 }
 
 .social-icon {
-    background: #f3f3f3;
+    background: #ffffff;
     color: #212529;
     font-size: 1.5rem;
     text-decoration: none;
@@ -177,4 +185,150 @@ footer button {
 .img {
     max-width: 10px;
     height: auto;
+}
+
+/* Підвал */
+
+.footer {
+    background-color: #333; /* Колір футера */
+    color: #fff; /* Колір тексту у футері */
+    padding: 50px 0; /* Відступи у футері */
+}
+
+.footer h3 {
+    color: #fff; /* Колір заголовків у футері */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #f1eeee; /* Колір посилань у футері */
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #aa7575; /* Колір посилань у футері при наведенні */
+}
+
+.footer form {
+    margin-top: 10px;
+}
+
+.footer input[type="email"],
+.footer button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer input[type="email"] {
+    width: 20%; /* Ширина поля вводу email */
+}
+
+.footer button {
+    background-color: #007bff; /* Колір кнопки */
+    color: #fff; /* Колір тексту на кнопці */
+    cursor: pointer;
+}
+
+.footer p {
+    color: #ccc; /* Колір тексту в футері */
+}
+
+/* Table */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  .table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+  }
+  
+  .table .table {
+    background-color: #fff;
+  }
+  
+  /* Table Head */
+  .table-dark th {
+    color: #5b9b70;
+    background-color: #343a40;
+    border-color: #454d55;
+  }
+  
+  /* Table Body */
+  .table tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+  
+  /* Table Footer */
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Table Responsive */
+  @media (max-width: 575.98px) {
+    .table-responsive-sm {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+    .table-responsive-sm > .table-bordered {
+      border: 0;
+    }
+  }
+
+  .table thead {
+    vertical-align: bottom;
+}
+
+.table th {
+    padding: 1rem 0;
+    color: rgb(161, 160, 170);
+    font-weight: 700;
+    text-align: left;
+}
+
+.table tr {
+    display: table-row;
+}
+
+.table td {
+    padding: .5rem 0;
+    display: table-cell;
+}
+
+.table td .remove{
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+    color: rgb(193, 81, 25);
 }

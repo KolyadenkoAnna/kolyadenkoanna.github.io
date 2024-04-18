@@ -3,31 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Метатег для опису сторінки українською мовою -->
+    <title>Кошик бажань</title>
     <meta name="description" content="Головна сторінка персонального сайту">
-
-    <!-- Метатег для опису сторінки англійською мовою -->
-    <meta name="description" content="Main page of personal website">
-
-    <!-- Метатеги з ключовими словами українською та англійською мовами -->
     <meta name="keywords" content="сайт, веб-сторінка, персональний, web page, personal website">
-
-    <!-- Метатег, що забороняє роботам перекладати сторінку -->
     <meta name="google" content="notranslate">
-    <!--Теги-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна</title>
     <link rel="stylesheet" href="/css/app/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-FqQmUWBeLSdICwWp3Gouc7Wr/hfHnyX9eLZIKjnPlRjvKJgx63n/BnDhHz8a6N+xBp2M5vQfnbZByKkeHfcmDw==" crossorigin="anonymous" />
-    <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Кошик побажань</title> <!-- Повний опис змісту сторінки -->
-
-<head>
+</head>
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="navbar-brand"></a>
@@ -50,54 +36,55 @@
         <a class="nav-item" href="login.html"><i class="nav-link text-uppercase far fa-user"></i></a>
     </div>
 </nav>
-<body>
-    <h2>Список бажань</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Фото</th>
-                <th>Назва товару</th>
-                <th>Ціна</th>
-                <th>Дії</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="image/1image.jpg" alt="Набої" style="max-width: 100px; max-height: 100px;"></td>
-                <td>Набої</td>
-                <td>$200</td>
-                <td><button>Видалити</button></td>
-            </tr>
-            <tr>
-                <td><img src="image/2image.jpg" alt="Пістолети" style="max-width: 100px; max-height: 100px;"></td>
-                <td>Пістолети</td>
-                <td>$1000</td>
-                <td><button>Видалити</button></td>
-            </tr>
-            <tr>
-                <td><img src="image/3image.jpg" alt="Ножі" style="max-width: 100px; max-height: 100px;"></td>
-                <td>Ножі</td>
-                <td>$500</td>
-                <td><button>Видалити</button></td>
-            </tr>
-        </tbody>
-    </table>
-</body>
+  <div class="container">
+      <div class="cart-wrapper">
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Підписка</h3>
-                    <p></p>
-                    <form>
-                        <input type="email" placeholder="Ваш email">
-                        <button type="submit">Підписатися</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    <p>Mercury &copy; 2024.</p>
-</footer>
-</body>
+          <div class="cart-header">
+              <h3>Wishlist</h3>
+          </div>
+
+          <div class="cart-content">
+
+              <table class="table">
+                  <thead class="bg-light">
+                      <tr>
+                          <th>Product</th>
+                          <th>Price</th>
+                          <th>Total</th>
+                          <th>Action</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><a class="reset-anchor" href="#!"><img src="image/2image.jpg" width="200" alt="Product1 name"> Пістолети</a></td>
+                          <td>$1000</td>
+                          <td>10</td>
+                          <td><a class="reset-anchor remove" href="#!">
+                              <i class="fas fa-trash-alt"></i>
+                          </a></td>
+                      </tr>
+                      <tr>
+                          <td><a class="reset-anchor" href="#!"><img src="image/3image.jpg" width="200" alt="Product1 name"> Ножі</a></td>
+                          <td>$500</td>
+                          <td>10</td>
+                          <td><a class="reset-anchor remove" href="#!">
+                              <i class="fas fa-trash-alt"></i>
+                          </a></td>
+                      </tr>
+                      <tr>
+                          <td><a class="reset-anchor" href="#!"><img src="image/5image.jpg" width="200" alt="Product1 name"> Набої</a></td>
+                          <td>$200</td>
+                          <td>10</td>
+                          <td><a class="reset-anchor remove" href="#!">
+                              <i class="fas fa-trash-alt"></i>
+                          </a></td>
+                      </tr>
+                  </tbody>
+
+              </table>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
 </head>
