@@ -215,6 +215,14 @@ img {
         display: inline-block; /* Зробити кнопку блочним елементом */
     }
 
+    #newArrivals {
+        background-image: url("image/1image.jpg");
+        background-repeat: no-repeat; /* Заборона повторення зображення */
+        background-size: contain; /* Розмір фонового зображення, щоб воно вміщалося в контейнер */
+        background-position: center; /* Центрування фону */
+        padding: 20px; /* При необхідності встановіть відступи */
+    }
+    
     /* Divider*/
 
 .divider {
