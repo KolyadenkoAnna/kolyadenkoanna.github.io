@@ -13,7 +13,11 @@ body {
     background-color: #fff;
     color: #07223c;
     margin: 0;
+    background-image: url(image/3image.jpg);
+    background-size: cover; /* Підібрати розмір зображення */
+    background-position: center; /* Вирівняти зображення по центру */
 }
+
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-weight: 700;
@@ -67,6 +71,15 @@ h6, .h6 {
     color: #999;
 }
 
+.navbar-nav {
+    margin-left: 10; /* Видаляємо внутрішній відступ */
+}
+
+.nav-item {
+    margin-left: 20px; /* Встановлюємо відступ для кожного елемента */
+}
+
+
 .hero {
     background-size: cover;
     background-position: center;
@@ -95,7 +108,7 @@ img {
 }
 
 #newArrivals {
-    background-image: url("image/1image.jpg");
+    background-image: url(image/1image.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -330,5 +343,45 @@ footer button {
     width: 28px;
     height: 28px;
     padding: 6px;
-    color: rgb(193, 81, 25);
+    color: rgb(237, 165, 129);
 }
+
+/* Сторінка Контакти */
+
+body {
+    font-family: "Labrada", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Колір фону сторінки */
+}
+
+header {
+    background-color: #333; /* Колір фону заголовка */
+    color: #fff; /* Колір тексту заголовка */
+    padding: 20px;
+    text-align: left;
+}
+
+main {
+    padding: 20px;
+}
+
+.contact-info {
+    background-color: #fff; /* Колір фону блоку контактної інформації */
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь блоку */
+}
+
+footer.footer {
+    background-color: #222; /* Колір фону футера */
+    color: #644c4c; /* Колір тексту у футері */
+    padding: 20px;
+    text-align: left;
+}
+
+.footer {
+    margin-top: 50px; /* Відступ зверху футера для головної сторінки */
+}
+
+
