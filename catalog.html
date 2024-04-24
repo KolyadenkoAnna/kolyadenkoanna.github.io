@@ -9,11 +9,31 @@
     <meta name="google" content="notranslate">
     <link rel="stylesheet" href="/css/app/styles.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-FqQmUWBeLSdICwWp3Gouc7Wr/hfHnyX9eLZIKjnPlRjvKJgx63n/BnDhHz8a6N+xBp2M5vQfnbZByKkeHfcmDw==" crossorigin="anonymous" />
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+body {
+  background-image: url('image/1fone.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dark-footer {
+  background-color: #333; /* Колір фону */
+  color: #fff; /* Колір тексту */
+  padding: 20px 0; /* Відступи */
+  text-align: center; /* Вирівнювання тексту */
+}
+
+.dark-footer p {
+  margin-bottom: 0; /* Знищуємо знизу зазначений відступ */
+}
+
+</style>
 </head>
 <body>
     <nav class="navbar">
@@ -31,60 +51,207 @@
             </div>
         </div>
     </nav>  
-    <h1>Каталог</h1>
+
     <div class="container">
+        <h1>Каталог</h1>
         <div class="row">
-            <div class="col">
+            <aside class="col-md-3">Sidebar</aside>
+            <div class="col-md-9">
                 <h5>Shop by Category</h5>
-            </div>
-            <div class="col">
                 <div class="row">
-                    <!-- Перший товар -->
-                    <div class="col">
+                    <div class="col-md-4">
                         <div class="product">
                             <a href="detail.html">
-                                <img class="img-fluid" src="image/1image.jpg" alt="Пістолети" style="max-width: 200px; max-height: 200px;">
+                                <img class="img-fluid" src="image/1image.jpg" alt="Пістолети">
                             </a>
+                            <h6 class="text-center">
+                                <a class="reset-anchor" href="detail.html">Набої для пістолетів</a>
+                            </h6>
+                            <p class="text-center text-muted font-weight-bold">$50</p>
                         </div>
-                        <h6 class="text-center">
-                            <a class="reset-anchor" href="detail.html">Набої для пістолетів</a>
-                        </h6>
-                        <p class="text-center text-muted font-weight-bold">$50</p>
-                    </div>                    
-                    <!-- Другий товар -->
-                    <div class="col">
-                        <div class="product">
-                            <a href="detail.html">
-                                <img class="img-fluid" src="image/3image.jpg" alt="Ножі" style="max-width: 200px; max-height: 200px;">
-                            </a>
-                        </div>
-                        <h6 class="text-center">
-                            <a class="reset-anchor" href="detail.html">Мисливські ножі</a>
-                        </h6>
-                        <p class="text-center text-muted font-weight-bold">$60</p>
                     </div>
-                    <!-- Третій товар -->
-                    <div class="col">
+                    <div class="col-md-4">
                         <div class="product">
                             <a href="detail.html">
-                                <img class="img-fluid" src="image/7image.jpg" alt="Пістолети" style="max-width: 200px; max-height: 200px;">
+                                <img class="img-fluid" src="image/3image.jpg" alt="Ножі">
                             </a>
+                            <h6 class="text-center">
+                                <a class="reset-anchor" href="detail.html">Мисливські ножі</a>
+                            </h6>
+                            <p class="text-center text-muted font-weight-bold">$60</p>
                         </div>
-                        <h6 class="text-center">
-                            <a class="reset-anchor" href="detail.html">Барабанні пістолети</a>
-                        </h6>
-                        <p class="text-center text-muted font-weight-bold">$70</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product">
+                            <a href="detail.html">
+                                <img class="img-fluid" src="image/8image.jpg" alt="Барабанні пістолети">
+                            </a>
+                            <h6 class="text-center">
+                                <a class="reset-anchor" href="detail.html">Барабанні пістолети</a>
+                            </h6>
+                            <p class="text-center text-muted font-weight-bold">$70</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="divider"></div>
+    <div class="container">
+        <div class="row">
+  
+          <aside class="py-5 sidebar">
+            <div class="container">
+              <header class="text-center">
+                <h2 class="">Sidebar</h2>
+                
+              </header>
+            </div>
+            
+          </aside>
+          <!-- New arrivals-->
+          <main class="py-5 catalog">
+            <div class="container">
+              
+              <header class="text-center">
+                <h2 class="">Товари які набирають популярності</h2>
+                <p class="text-muted">Найкращі пропозиції</p>
+              </header>
+              
+              <div class="container" id="newArrivals">
+                <div class="wrapper row">
+                  <article class="col-3">
+                    
+                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
+                      <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
+                    </a>
+                    
+                    </div>
+  
+                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
+                    <p class="text-center text-muted">$50.00</p>
+                  </article>
+                  <article class="col-3">
+                    
+                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
+                      <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
+                    </a>
+                    
+                    </div>
+  
+                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
+                    <p class="text-center text-muted">$50.00</p>
+                  </article>
+                  <article class="col-3">
+                    
+                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
+                      <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
+                    </a>
+                    
+                    </div>
+  
+                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
+                    <p class="text-center text-muted">$50.00</p>
+                  </article>
+                  <article class="col-3">
+                    
+                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
+                      <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
+                    </a>
+                    
+                    </div>
+  
+                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
+                    <p class="text-center text-muted">$50.00</p>
+                  </article>
+                  <article class="col-3">
+                    
+                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
+                      <img class="img-fluid" src="image/7image.jpg" alt="Сool winter knife">
+                    </a>
+                    
+                    </div>
+  
+                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
+                    <p class="text-center text-muted">$50.00</p>
+                  </article>
+                  <article class="col-3">
+                    
+                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
+                      <img class="img-fluid" src="image/7image.jpg" alt="Сool winter knife">
+                    </a>
+                    
+                    </div>
+  
+                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
+                    <p class="text-center text-muted">$50.00</p>
+                  </article>
+                  <article class="col-3">
+                    
+                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
+                      <img class="img-fluid" src="image/7image.jpg" alt="Сool winter knife">
+                    </a>
+                    
+                    </div>
+  
+                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
+                    <p class="text-center text-muted">$50.00</p>
+                  </article>
+                  <article class="col-3">
+                    
+                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
+                      <img class="img-fluid" src="image/7image.jpg" alt="Сool winter knife">
+                    </a>
+                    
+                    </div>
+  
+                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
+                    <p class="text-center text-muted">$50.00</p>
+                  </article>
+
+    <div class="container">
+        <h1>Картки товарів</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/8image.jpg" class="card-img-top" alt="Товар 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Товар 1</h5>
+                        <p class="card-text">Опис товару</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/12image.jpg" class="card-img-top" alt="Товар 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Товар 2</h5>
+                        <p class="card-text">Опис товару</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/5image.jpg" class="card-img-top" alt="Товар 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Товар 3</h5>
+                        <p class="card-text">Опис товару</p>
+                        <a href="#" class="btn btn-primary">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Додавайте більше блоків карток товарів за потреби -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <footer>
-        <ul>
-            <li><a href="https://ajax.systems/" target="_blank">Ajax Systems</a></li>
-        </ul>
-    </footer>
+
+    </footer>    
 </body>
 </html>

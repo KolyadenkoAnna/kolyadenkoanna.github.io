@@ -1,23 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+@import url(https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);
 
-* {
-    box-sizing: border-box;
-}
 
 body {
     font-family: "Labrada", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    background-color: #fff;
+    background-color: #888585;
     color: #07223c;
     margin: 0;
-    background-image: url(image/3image.jpg);
+    background-image: url();
     background-size: cover; /* Підібрати розмір зображення */
     background-position: center; /* Вирівняти зображення по центру */
 }
-
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-weight: 700;
@@ -92,19 +88,29 @@ h6, .h6 {
 }
 
 .social-icon {
-    background: #ffffff;
-    color: #212529;
+    background: none;
+    color: #9dc6ef;
     font-size: 1.5rem;
     text-decoration: none;
     width: 34px;
     height: 34px;
     display: block;
+    padding: 20px; /* Відступи з усіх сторін */
 }
 
 img {
     vertical-align: middle;
     max-width: 100%;
     height: auto;
+}
+
+.img-fluid {
+    height: auto;
+    max-width: 100%;
+}
+
+.product {
+    width: 250px;
 }
 
 #newArrivals {
@@ -116,8 +122,8 @@ img {
 }
 
 .divider {
-    padding-top: 5px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 300px;
     background-attachment: fixed !important;
     height: 5px;
     background: linear-gradient(to right, #ADD8E6 5%, #87CEEB 17%, #4682B4 40%, #0000FF 85%, #191970 95%);
@@ -242,7 +248,7 @@ footer button {
 }
 
 .footer input[type="email"] {
-    width: 20%; /* Ширина поля вводу email */
+    width: 70%; /* Ширина поля вводу email */
 }
 
 .footer button {
@@ -254,6 +260,7 @@ footer button {
 .footer p {
     color: #ccc; /* Колір тексту в футері */
 }
+
 
 /* Table */
 .table {
@@ -384,4 +391,71 @@ footer.footer {
     margin-top: 50px; /* Відступ зверху футера для головної сторінки */
 }
 
+.dark-footer {
+    background-color: #343a40; /* Чорний фон */
+    color: #ffffff; /* Білий колір тексту */
+    padding: 50px 0; /* Подушечка вниз і вгору для зручності читання */
+}
 
+
+/* Стилі для 10 уроку (flexbox)!!! */
+
+/* Стилізація контейнера з рядками та бічним баром */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  /* Стилізація бічного бару */
+  .sidebar {
+    background-color: none;
+  }
+  
+  /* Стилізація заголовка бічного бару */
+  .sidebar header {
+    margin-bottom: 10px;
+  }
+  
+  /* Стилізація контейнера з новинками */
+  .catalog {
+    background-color: #f2f7f3;
+    padding: 20px;
+    border: 1px solid #d5dfe9;
+    border-radius: 5px;
+  }
+  
+  /* Стилізація заголовка контейнера з новинками */
+  .catalog header {
+    margin-bottom: 10px;
+  }
+  
+  /* Стилізація продукту */
+  .product {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Стилізація зображення продукту */
+  .product img {
+    transition: transform 0.5s ease;
+  }
+  
+  /* Збільшення зображення продукту при наведенні */
+  .product:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Стилізація тексту */
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Збільшення розміру заголовка на мобільних пристроях */
+  @media (max-width: 767px) {
+    .h2 {
+      font-size: 24px;
+    }
+  }
+  
