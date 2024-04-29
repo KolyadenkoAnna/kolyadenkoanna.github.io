@@ -15,92 +15,85 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-
-<nav class="navbar">
-    <div class="container">
-        <a href="index.html" class="navbar-brand"></a>
-        <div class="navbar-wrapper">
-            <div class="navbar-nav">
-                <a href="index.html" class="nav-item text-uppercase">Головна</a>
-                <a href="about.html" class="nav-item text-uppercase">Про нас</a>
-                <a href="catalog.html" class="nav-item text-uppercase">Каталог</a>
-                <a href="blog.html" class="nav-item text-uppercase">Blog</a>
-                <a href="contact.html" class="nav-item text-uppercase">Контакти</a>
-                <a href="login.html" class="nav-item text-uppercase">Вхід</a>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"></a>
+            <div class="navbar-wrapper">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item text-uppercase">Головна</a>
+                    <a href="about.html" class="nav-item text-uppercase">Про нас</a>
+                    <a href="catalog.html" class="nav-item text-uppercase">Каталог</a>
+                    <a href="blog.html" class="nav-item text-uppercase">Blog</a>
+                    <a href="contact.html" class="nav-item text-uppercase">Контакти</a>
+                    <a href="login.html" class="nav-item text-uppercase">Вхід</a>
+                    <a class="nav-item" href="cart.html"><i class="nav-link text-uppercase fas fa-dolly-flatbed"></i></a>
+                    <a class="nav-item" href="#"><i class="nav-link text-uppercase far fa-heart"></i></a>
+                    <a class="nav-item" href="login.html"><i class="nav-link text-uppercase far fa-user"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-</nav>  
-    <div class="navbar-nav">
-        <a class="nav-item" href="cart.html"><i class="nav-link text-uppercase fas fa-dolly-flatbed"></i></a>
-        <a class="nav-item" href="#"><i class="nav-link text-uppercase far fa-heart"></i></a>
-        <a class="nav-item" href="login.html"><i class="nav-link text-uppercase far fa-user"></i></a>
-    </div>
-</nav>
-  <div class="container">
-      <div class="cart-wrapper">
+    </nav>  
 
-          <div class="cart-header">
-              <h3>Wishlist</h3>
-          </div>
-
-          <div class="cart-content">
-
-              <table class="table">
-                  <thead class="bg-light">
-                      <tr>
-                          <th>Product</th>
-                          <th>Price</th>
-                          <th>Total</th>
-                          <th>Action</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td><a class="reset-anchor" href="#!"><img src="image/2image.jpg" width="200" alt="Product1 name"> Пістолети</a></td>
-                          <td>$1000</td>
-                          <td>10</td>
-                          <td><a class="reset-anchor remove" href="#!">
-                              <i class="fas fa-trash-alt"></i>
-                          </a></td>
-                      </tr>
-                      <tr>
-                          <td><a class="reset-anchor" href="#!"><img src="image/3image.jpg" width="200" alt="Product1 name"> Ножі</a></td>
-                          <td>$500</td>
-                          <td>10</td>
-                          <td><a class="reset-anchor remove" href="#!">
-                              <i class="fas fa-trash-alt"></i>
-                          </a></td>
-                      </tr>
-                      <tr>
-                          <td><a class="reset-anchor" href="#!"><img src="image/5image.jpg" width="200" alt="Product1 name"> Набої</a></td>
-                          <td>$200</td>
-                          <td>10</td>
-                          <td><a class="reset-anchor remove" href="#!">
-                              <i class="fas fa-trash-alt"></i>
-                          </a></td>
-                      </tr>
-                  </tbody>
-
-              </table>
-          </div>
-      </div>
-  </div>
-</div>
-</div>
-
-<footer class="footer" class="bg-dark">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Підписка</h3>
-                <form>
-                    <input type="email" placeholder="Ваш email">
-                    <button type="submit">Підписатися</button>
-                </form>
+        <div class="cart-wrapper">
+            <div class="cart-header">
+                <h3>Wishlist</h3>
+            </div>
+            <div class="cart-content">
+                <table class="table">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a class="reset-anchor" href="#!"><img src="image/2image.jpg" width="200" alt="Product1 name"> Пістолети</a></td>
+                            <td>$1000</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>$1000</td>
+                            <td><a class="reset-anchor remove" href="#!"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="reset-anchor" href="#!"><img src="image/3image.jpg" width="200" alt="Product1 name"> Ножі</a></td>
+                            <td>$500</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>$500</td>
+                            <td><a class="reset-anchor remove" href="#!"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><a class="reset-anchor" href="#!"><img src="image/5image.jpg" width="200" alt="Product1 name"> Набої</a></td>
+                            <td>$200</td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td>$200</td>
+                            <td><a class="reset-anchor remove" href="#!"><i class="fas fa-trash-alt"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </div>
-    <p>Mercury &copy; 2024.</p>
-</footer>
-</head>
+    </div>    
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Підписка</h3>
+                    <form>
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit">Підписатися</button>
+                    </form>
+                </div>
+            </div>
+            <p>Mercury &copy; 2024.</p>
+        </div>
+    </footer>
+
+    <!-- Підключення скриптів -->
+</body>
+</html>
