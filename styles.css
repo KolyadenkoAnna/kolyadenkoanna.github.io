@@ -50,13 +50,31 @@ h6, .h6 {
 
 .navbar-nav {
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    list-style: none;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #9489da;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #ccc;
 }
 
 .navbar {
-    background-color: #d7dfea;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ccc9c9;
+    color: #fff;
 }
 
 .navbar-nav .nav-item {

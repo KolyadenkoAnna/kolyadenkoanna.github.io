@@ -35,12 +35,62 @@
         .footer {
     margin-top: 80px; /* Відступ зверху футера */
         }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <!-- Навігаційна панель -->
     <nav class="navbar">
-        <div class="container">
+        <div class="navbar-nav">
             <a href="index.html" class="navbar-brand"></a>
             <div class="navbar-wrapper">
                 <div class="navbar-nav">
@@ -59,6 +109,46 @@
     <header>
         <h1>Наші контакти</h1>
     </header>
+    <main>
+        <div class="container">
+            <header class="text-center">
+                <h1>Contact Us</h1>
+            </header>
+            <form action="/contact" class="form" method="get">
+                <div class="form-group">
+                    <label for="firstname">*Your First Name:</label>
+                    <input id="firstname" name="first_name" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label for="lastname">*Your Last Name:</label>
+                    <input id="lastname" name="last_name" type="text" class="form-control" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">*Your Email:</label>
+                    <input id="email" name="email" class="form-control" placeholder="Enter your email here" required type="email" />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Your Phone Number:</label>
+                    <input id="phone" name="phone" type="tel" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="city">Your City:</label>
+                    <select id="city" name="city" class="form-control">
+                        <option>Choose...</option>
+                        <option>Lviv</option>
+                        <option>Kyiv</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Drop Your message for us here" required rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
 
     <!-- Основний контент -->
     <main>
