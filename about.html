@@ -13,6 +13,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        .hero-section {
+          position: relative;
+          height: 100vh;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          text-align: center;
+        }
+        .hero-section video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+        .hero-section h1 {
+          font-size: 3rem;
+          font-weight: bold;
+        }
+        .hero-section span {
+          color: #ffc107;
+        }
+        .navbar-nav a {
+          margin-right: 1rem;
+        }
+      </style>
+
 </head>
 
 <body>
@@ -21,7 +55,7 @@
     <header class="navbar navbar-light bg-white">
       
       <!-- Navbar brand-->
-      <a class="navbar-brand" href="index.html">Mercury</a>
+      <a class="navbar-brand" href="index.html"></a>
       <label for="toggler" class="fas fa-bars"></label>
       <input type="checkbox" id="toggler">
 
@@ -43,25 +77,28 @@
      
   </header> 
 
- <!-- Hero slider-->
- <section class="hero" style="background: url(image/1fone.jpg)">
-    <div class="container">
-        <div class="row text-center">
-          <div class="col-6 float-left">
-            <p class="h6 text-uppercase text-muted">Summer 2024</p>
-            <h1 class="hero-heading title">Колекція зброї на всі смаки</h1>
-            <div class="row">
-              <div class="col">
-                <p class="text-muted subtitle">Перевершуйте очікування з нашим вибором зброї та аксесуарів. Наш магазин пропонує не лише найкращі продукти, але й бездоганне обслуговування, щоб ви почувалися впевнено і захищено. Забезпечте собі найвищий ступінь захисту та спокою думки з нашою допомогою. Наші експерти зроблять все можливе, щоб забезпечити вашу безпеку та задоволення. Переконайтеся, що ви готові до будь-яких викликів з нашою зброєю. Довіртеся нам - ваша безпека наш пріоритет.</p>
-              </div>
-            </div><a class="btn text" href="shop.html">Shop now</a>
-          </div>
+  <div class="viewport-header">
+    <video src="kyiv.mp4" autoplay loop playsinline muted></video>
+   <div class="viewport-header">
+   <h1>
+    Explore
+    <span>Mercury</span>
+   </h1>
+  </div>
+</div>
 
-          <div class="col-6 float-right"></div>
+<!-- About Section -->
+<div class="container py-5">
+    <h1 class="mb-3 text-center">About page</h1>
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe title="Wikipedia page for May 2024 solar storms" class="embed-responsive-item" src="https://www.youtube.com/embed/7jQhxQr1xtI" allowfullscreen width="800" height="300"></iframe>
         </div>
+      </div>
     </div>
-  </section>
-  <hr> 
+  </div>
+  
 
  <!-- Футер сторінки -->
  <footer class="bg-dark">
