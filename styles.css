@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;0,700;1,400;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,400;0,600;1,400&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 
 :root {
     --anchor-color: indigo;
@@ -12,7 +12,7 @@
 
 section #hero {
     --btn-color: white;
-    --btn-background: salmon;
+    --btn-background: rgb(126, 239, 20);
 }
 
 * {
@@ -20,15 +20,12 @@ section #hero {
 }
 
 body{
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Labrada', sans-serif; 
     font-size:1rem;
     font-weight:400;
     line-height:1.5;
     color:#212529;
     background-color:#fff;
-    background-image: url(image/2fone.jpg);
-    background-position: center center; /* Центрувати зображення по горизонталі та вертикалі */
-    background-repeat: no-repeat; /* Забороняє повторення зображення */
     margin: 0;
 }
 
@@ -199,6 +196,8 @@ thead, tbody, tfoot, tr, td, th {
     color: red;
 }
 
+
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -306,60 +305,46 @@ hr {
     }
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.text-center {
-    text-align: center;
-}
-
 .form {
-    margin-top: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.form-container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-group div {
+    width: 100%;
 }
 
 .form-control {
+    display: block;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: .375rem .75rem;
+    background-color: #f8f9fa;
+    border: 1px solid gray;
 }
 
-textarea.form-control {
-    resize: vertical; /* Дозволяє розтягувати поле вводу у вертикальному напрямку */
-}
-
-button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #2163a9;
+@media (min-width: 760px) {
+    .input-group div {
+        padding: 0;
+        margin: 0;
+        flex: 1;
+    }
 }
 
 /* nav */
 
 .navbar {
-    padding: 1rem;
-    background-color: #f9f9f9;
+    padding: .5rem 5%;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -371,89 +356,87 @@ button[type="submit"]:hover {
     z-index: 1000;
 }
 
-.navbar .navbar-nav .nav-item {
-    margin-right: 1rem; /* Встановлюємо відступи між елементами меню */
+
+.navbar-brand{
+    font-size:1.25rem;
+    text-decoration:none;
+    white-space:nowrap
 }
 
-.navbar .navbar-nav .nav-item:last-child {
-    margin-right: 0; /* Відключаємо відступ для останнього елемента */
-}
-
-.nav-item {
-color: #007bff;
-justify-content: space-between;
-}
-
-.navbar .container {
-    display: flex; /* Встановлюємо відображення в ряд */
-    align-items: center; /* Вирівнюємо елементи по вертикалі */
-}
-
-/* Add your imports and root variables here */
-
-.navbar-brand {
-    font-weight: bold;
-    color: #ff5733; /* Example color, change as needed */
-}
-
-.navbar-nav, .toolbar-nav {
-    display: flex;
-    gap: 1rem; /* Adjust the gap as needed */
-}
-
-.navbar-nav a, .toolbar-nav a {
+.navbar a {
     text-decoration: none;
-    color: #000; /* Change this to your preferred text color */
-    padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
+    font-size: 1rem;
+    color: rgb(0 0 0 / .9);
+    margin-right: 1rem;
+
 }
 
-.navbar-nav a:hover, .toolbar-nav a:hover {
-    color: #ff5733; /* Change this to your preferred hover color */
+
+.navbar-nav .nav-link{
+    color:rgba(0,0,0,0.95);
+    font-size:0.9rem;
+    text-decoration: none;
 }
 
-.nav-link {
-    color: blue; /* Задаємо колір тексту */
-  }
-  
-  .nav-link:hover {
-    color: red; /* Задаємо колір тексту при наведенні курсора миші */
-  }
-  
-
-.nav-link.active {
-    color: #007bff; /* Active link color */
-    font-weight: bold;
+.navbar-nav .nav-link.active{
+    color:#4650dd;
+    font-weight:700
 }
+
+.toolbar-nav {
+    margin-left: .5rem;
+}
+
 
 #toggler, .navbar label {
     display: none;
 }
 
-@media (max-width: 45rem) {
+@media (max-width:45rem) {
+    .navbar label {
+        display: inline-block;
+        order: 3;
+    }
+
     .navbar {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .navbar-nav, .toolbar-nav {
-        flex-direction: column;
-        align-items: center;
-    }
+    
+.navbar-nav{
+    position: absolute;
+    top:10%;
+    left: 0;
+    right: 0;
+    /* background-color: #fff; */
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 
-    .navbar-nav {
-        position: absolute;
-        top: 60px; /* Adjust based on your navbar height */
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        display: none;
-        flex-direction: column;
-    }
+}
 
-    #toggler:checked ~ .navbar-nav {
-        display: flex;
+#toggler:checked ~ nav.navbar-nav {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+    .navbar-nav a {
+        display: block;
+        margin: .5rem;
     }
 }
+
+.navbar-nav {
+    margin-left: 20px; /* Встановіть бажаний відступ зліва */
+  }
+  
+  .toolbar-nav {
+    margin-right: 20px; /* Встановіть бажаний відступ справа */
+  }
+
+  header.navbar {
+    margin-bottom: 20px; /* Встановіть бажаний відступ знизу */
+  }  
 
 .product {
     position: relative;
@@ -705,4 +688,173 @@ justify-content: space-between;
         grid-template-columns: 1fr;
     }
     
+}
+
+/* modal */
+
+.modal {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    max-width: 50%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-dialog {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(161, 160, 170);
+}
+
+.modal-body {
+    width: 100%;
+    display: flex;
+}
+
+.modal-body main {
+    flex: 1;
+    /* border: 1px solid red; */
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+.modal-body aside {
+    flex: 1;
+    /* border: 1px solid green; */
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+.modal-body aside img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.info-container {
+    display: grid;
+    gap: 1rem;
+}
+
+.info-header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.info-price {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.info-shipping {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.info-qty {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+
+.info-button {
+    grid-column: 1 / 3;
+    grid-row: 4;
+}
+
+
+.info-description {
+    grid-column: 1 / 3;
+    grid-row: 5;
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: #999;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 25px;
+    border: gray 1px solid;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 10;
+}
+
+.close:hover {
+    background-color: salmon;
+    color: white;
+    border: 1px solid salmon;
+}
+
+.py-5 {
+    padding: 5rem 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+
+.viewport-header {
+    position: relative;
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.viewport-header .viewport-header h1 {
+    margin-top: 10rem;
+}
+.viewport-header h1 {
+    
+    z-index: 3;
+    color: gold;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1;
+    font-size: 3vw;
+    text-align: center;
+    span {
+        display: block;
+        font-size: 10vw;
+        letter-spacing: -1.2vw;
+    }
 }
