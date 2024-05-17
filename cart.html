@@ -16,12 +16,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+          <!-- Navbar brand-->
+          <a class="navbar-brand" href="index.html">brand</a>
+          <label for="toggler" class="fas fa-bars"></label>
+          <input type="checkbox" id="toggler">
+
+    <!-- Навігаційна панель -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="navbar-brand"></a>
             <div class="navbar-wrapper">
                 <div class="navbar-nav">
-                    <a href="index.html" class="nav-item text-uppercase">Головна</a>
+                    <a href="index.html" class="nav-item text-uppercase active">Головна</a>
                     <a href="about.html" class="nav-item text-uppercase">Про нас</a>
                     <a href="catalog.html" class="nav-item text-uppercase">Каталог</a>
                     <a href="blog.html" class="nav-item text-uppercase">Blog</a>
@@ -33,7 +39,7 @@
                 </div>
             </div>
         </div>
-    </nav>  
+    </nav> 
 
     <div class="container">
         <div class="cart-wrapper">
@@ -79,20 +85,69 @@
         </div>
     </div>    
 
-    <footer class="footer bg-dark">
-        <div class="container">
+ <!-- Футер сторінки -->
+ <footer class="bg-dark">
+    <div class="container">
+        <div class="row">
+<!-- Меню -->
+<div class="col-md-4">
+<h6 class="text-white">Меню</h6>
+<ul class="list-unstyled text-muted mb-0">
+    <li class="mb-2"><a class="reset-anchor" href="about.html" target="_blank">Про нас</a></li>
+    <li class="mb-2"><a class="reset-anchor" href="blog.html" target="_blank">Блог</a></li>
+    <li class="mb-2"><a class="reset-anchor" href="contact.html" target="_blank">Контакти</a></li>
+    <li class="mb-2"><a class="reset-anchor" href="https://ajax.systems/" target="_blank">FAQ</a></li>
+</ul>
+</div>
+            <!-- Оплата -->
+            <div class="col-md-4">
+                <h6 class="text-white">Оплата</h6>
+                <ul class="list-unstyled text-muted">
+                    <li class="mb-2"><a class="reset-anchor" href="#">Мій обліковий запис</a></li>
+                    <li class="mb-2"><a class="reset-anchor" href="#">Відстеження замовлень</a></li>
+                    <li class="mb-2"><a class="reset-anchor" href="#">Оформити замовлення</a></li>
+                    <li class="mb-2"><a class="reset-anchor" href="#">Список бажань</a></li>
+                </ul>
+            </div>
+            <!-- Контактна інформація та соціальні мережі -->
+            <div class="col-md-4">
+                <h6 class="text-white">Контакти</h6>
+                <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+1 123 456 789</a></p>
+                <p class="text-muted">Закревського, Київ, Україна</p>
+               
+                <!-- Соціальні мережі -->
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="#"><i class="fab fa-google"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Авторські права та інформація про дизайн -->
+    <div class="container">
+        <div class="border border-top" style="border-color: #1d1d1d !important">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>Підписка</h3>
-                    <form>
-                        <input type="email" placeholder="Ваш email">
-                        <button type="submit">Підписатися</button>
-                    </form>
+                    <p class="small text-muted">© 2024 Всі права захищені.</p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p class="small text-muted">Шаблон розроблений <a class="text-white reset-anchor" href="#">AnnaKO</a></p>
                 </div>
             </div>
-            <p>Mercury &copy; 2024.</p>
         </div>
-    </footer>
+    </div>
+</footer>    
 
     <!-- Підключення скриптів -->
 </body>

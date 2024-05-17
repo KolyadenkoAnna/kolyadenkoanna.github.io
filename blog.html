@@ -16,66 +16,174 @@
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+          <!-- Navbar brand-->
+          <a class="navbar-brand" href="index.html">Mercury</a>
+          <label for="toggler" class="fas fa-bars"></label>
+          <input type="checkbox" id="toggler">
+
+    <!-- Навігаційна панель -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="navbar-brand"></a>
             <div class="navbar-wrapper">
                 <div class="navbar-nav">
-                    <a href="index.html" class="nav-item text-uppercase">Головна</a>
+                    <a href="index.html" class="nav-item text-uppercase active">Головна</a>
                     <a href="about.html" class="nav-item text-uppercase">Про нас</a>
                     <a href="catalog.html" class="nav-item text-uppercase">Каталог</a>
-                    <a href="blog.html" class="nav-item text-uppercase active">Blog</a>
+                    <a href="blog.html" class="nav-item text-uppercase">Blog</a>
                     <a href="contact.html" class="nav-item text-uppercase">Контакти</a>
                     <a href="login.html" class="nav-item text-uppercase">Вхід</a>
+                    <a class="nav-item" href="cart.html"><i class="nav-link text-uppercase fas fa-dolly-flatbed"></i></a>
+                    <a class="nav-item" href="#"><i class="nav-link text-uppercase far fa-heart"></i></a>
+                    <a class="nav-item" href="login.html"><i class="nav-link text-uppercase far fa-user"></i></a>
                 </div>
             </div>
         </div>
-    </nav>  
-    <h1>Блог</h1>
-    <div>
-        <div>
-            <title>Зброя: Історія, Сучасність та Майбутнє</title>
-        </head>
-        <body>
-            <article>
-                <h1>Зброя: Історія, Сучасність та Майбутнє</h1>
-                <p>
-                    Зброя завжди була не тільки предметом військового використання, але й символом влади, захисту та технологічного прогресу. Від простих кам'яних копій до сучасної високотехнологічної зброї, її роль у війнах та культурі невимовно велика.
-                </p>
-                <h2>Історія зброї</h2>
-                <p>
-                    Перші знаряддя для полювання та захисту були створені людиною тисячі років тому. Від кам'яних копій до мечів середньовіччя, зброя завжди була необхідним атрибутом для виживання. З розвитком технологій почали з'являтися мушкети, пістолети та гвинтівки, які революціонізували військову тактику.
-                </p>
-                <h2>Сучасність</h2>
-                <p>
-                    Сьогодні сучасна зброя включає в себе широкий спектр видів: від автоматичних гвинтівок до лазерних пускових установок. Технології розвиваються з кожним днем, що дозволяє створювати більш точну, потужну та безпечну зброю.
-                </p>
-                <h2>Майбутнє</h2>
-                <p>
-                    З моменту винайдення зброї вона постійно еволюціонує. Майбутнє може прийняти різні форми, від більш ефективної електронної війни до розвитку біотехнологічної зброї. Однак, незважаючи на технологічний прогрес, важливо пам'ятати про етичність та відповідальне використання зброї.
-                </p>
-            </article>
-            <ul>
-                <li><strong>Author:</strong> Kolyadenko Anna</li>
-                <li><strong>Published:</strong> 8 April 2024</li>
-                <li><strong>Tags:</strong> HTML, CSS, JS, monkeys</li>
-            </ul>
+    </nav> 
+    
+    <main class="blog">
+        <div class="blog-title"><h2>Our Latest Blogs</h2></div>
+  
+        <div class="blog-container">
+          <div class="blog-item">
+            <a href="#">
+              <div class="picture">
+                <img src="image/1fone.jpg" />
+              </div>
+              <div class="post-title">
+                Зброя: Історія, Сучасність та Майбутнє
+              </div>
+              <div class="post-content">Зброя завжди була не тільки предметом військового використання, але й символом влади, захисту та технологічного прогресу. Від простих кам'яних копій до сучасної високотехнологічної зброї, її роль у війнах та культурі невимовно велика.</div>
+              <div class="reading-time"></div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="#">
+              <div class="picture">
+                <img src="image/1fone.jpg" />
+              </div>
+              <div class="post-title">
+                Зброя: Історія, Сучасність та Майбутнє
+              </div>
+              <div class="post-content">Перші знаряддя для полювання та захисту були створені людиною тисячі років тому. Від кам'яних копій до мечів середньовіччя, зброя завжди була необхідним атрибутом для виживання. З розвитком технологій почали з'являтися мушкети, пістолети та гвинтівки, які революціонізували військову тактику.</div>
+              <div class="reading-time"></div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="#">
+              <div class="picture">
+                <img src="image/1fone.jpg" />
+              </div>
+              <div class="post-title">
+                Зброя: Історія, Сучасність та Майбутнє
+              </div>
+              <div class="post-content">Сьогодні сучасна зброя включає в себе широкий спектр видів: від автоматичних гвинтівок до лазерних пускових установок. Технології розвиваються з кожним днем, що дозволяє створювати більш точну, потужну та безпечну зброю.</div>
+              <div class="reading-time"></div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="#">
+              <div class="picture">
+                <img src="image/1fone.jpg" />
+              </div>
+              <div class="post-title">
+                Зброя: Історія, Сучасність та Майбутнє
+              </div>
+              <div class="post-content">З моменту винайдення зброї вона постійно еволюціонує. Майбутнє може прийняти різні форми, від більш ефективної електронної війни до розвитку біотехнологічної зброї. Однак, незважаючи на технологічний прогрес, важливо пам'ятати про етичність та відповідальне використання зброї.</div>
+              <div class="reading-time"></div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="#">
+              <div class="picture">
+                <img src="image/1fone.jpg" />
+              </div>
+              <div class="post-title">
+                Зброя: Історія, Сучасність та Майбутнє
+              </div>
+              <div class="post-content">---</div>
+              <div class="reading-time"></div>
+            </a>
+          </div>
+          <div class="blog-item">
+            <a href="#">
+              <div class="picture">
+                <img src="image/1fone.jpg" />
+              </div>
+              <div class="post-title">
+                Зброя: Історія, Сучасність та Майбутнє
+              </div>
+              <div class="post-content">----</div>
+              <div class="reading-time"></div>
+            </a>
+          </div>
+          
         </div>
-    </div>
-    <footer class="footer" class="bg-dark">
+      </main>
+
+    <!-- Футер сторінки -->
+    <footer class="bg-dark">
         <div class="container">
             <div class="row">
+<!-- Меню -->
+<div class="col-md-4">
+    <h6 class="text-white">Меню</h6>
+    <ul class="list-unstyled text-muted mb-0">
+        <li class="mb-2"><a class="reset-anchor" href="about.html" target="_blank">Про нас</a></li>
+        <li class="mb-2"><a class="reset-anchor" href="blog.html" target="_blank">Блог</a></li>
+        <li class="mb-2"><a class="reset-anchor" href="contact.html" target="_blank">Контакти</a></li>
+        <li class="mb-2"><a class="reset-anchor" href="https://ajax.systems/" target="_blank">FAQ</a></li>
+    </ul>
+</div>
+                <!-- Оплата -->
                 <div class="col-md-4">
-                    <h3>Підписка</h3>
-                    <form>
-                        <input type="email" placeholder="Ваш email">
-                        <button type="submit">Підписатися</button>
-                    </form>
+                    <h6 class="text-white">Оплата</h6>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><a class="reset-anchor" href="#">Мій обліковий запис</a></li>
+                        <li class="mb-2"><a class="reset-anchor" href="#">Відстеження замовлень</a></li>
+                        <li class="mb-2"><a class="reset-anchor" href="#">Оформити замовлення</a></li>
+                        <li class="mb-2"><a class="reset-anchor" href="#">Список бажань</a></li>
+                    </ul>
+                </div>
+                <!-- Контактна інформація та соціальні мережі -->
+                <div class="col-md-4">
+                    <h6 class="text-white">Контакти</h6>
+                    <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+1 123 456 789</a></p>
+                    <p class="text-muted">Закревського, Київ, Україна</p>
+                   
+                    <!-- Соціальні мережі -->
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-icon" href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="social-icon" href="#"><i class="fab fa-google"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <p>Mercury &copy; 2024.</p>
-    </footer>
+    
+        <!-- Авторські права та інформація про дизайн -->
+        <div class="container">
+            <div class="border border-top" style="border-color: #1d1d1d !important">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="small text-muted">© 2024 Всі права захищені.</p>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <p class="small text-muted">Шаблон розроблений <a class="text-white reset-anchor" href="#">AnnaKO</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>    
 </body>
 </html>
 

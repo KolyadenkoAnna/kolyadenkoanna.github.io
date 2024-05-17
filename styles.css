@@ -2,166 +2,124 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);
 
 
-body {
-    font-family: "Labrada", sans-serif;
-    font-size: 1rem;
-    font-weight: 200;
-    line-height: 1.5;
-    background-color: #ffffff;
-    color: #050c14;
-    margin: 0;
-    background-image: url();
-    background-size: cover; /* Підібрати розмір зображення */
-    background-position: center; /* Вирівняти зображення по центру */
+:root {
+    --anchor-color: indigo;
+    --anchor-light-color: white;
+    --anchor-active-color: indigo;
+    --background-color: salmon;
+    --currency-symbol: "\20B4";
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    font-weight: 700;
-    line-height: 1.2;
+section #hero {
+    --btn-color: white;
+    --btn-background: salmon;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif; 
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:#212529;
+    background-color:#fff;
+    background-image: url(image/2fone.jpg);
+    background-position: center center; /* Центрувати зображення по горизонталі та вертикалі */
+    background-repeat: no-repeat; /* Забороняє повторення зображення */
+    margin: 0;
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6{
+    font-weight:700;
+    line-height:1.2;
     margin-top: 0;
     margin-bottom: .5rem;
 }
 
-h6, .h6 {
-    font-size: 1rem;
+h6,.h6{
+    font-size:1rem
 }
 
-.text-center {
-    text-align: center !important;
+/* text */
+.text-center{
+    text-align:center !important
+}
+.text-right {
+    text-align: right;
 }
 
 .text-uppercase {
-    text-transform: uppercase !important;
-    letter-spacing: 0.1em;
+    text-transform:uppercase !important;
+    letter-spacing:0.1em;
 }
 
 .text-muted {
-    color: #a3b3bf !important;
+    color:#6c757d !important;
 }
 
-.block {
-    margin-top: 20px; /* Відступ зверху */
-    margin-right: 20px; /* Відступ справа */
-    margin-bottom: 15px; /* Відступ знизу */
-    margin-left: 30px; /* Відступ зліва */
-  }
-  
-  /* navbar 24/04 */
-
-.navbar-nav {
-    display: flex;
-    list-style: none;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.hero-heading{
+    font-size:2rem
 }
 
-.navbar-brand {
-    font-weight: bold;
-    color: #9489da;
-    text-decoration: none;
+.reset-anchor{
+    color:inherit;
+    text-decoration:none !important
 }
 
-.navbar-brand:hover {
-    color: #ccc;
+.text-light{color:#f8f9fa !important}
+
+.text-dark{color:#111 !important}
+
+.text-white{color:#fff !important}
+
+.text-body{color:#212529 !important}
+
+.text-gray{color:#6c757d !important}
+
+.small{
+    font-size:.875em
 }
 
-.navbar {
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #ccc9c9;
-    color: #fff;
-}
-
-.navbar-nav .nav-item {
-    margin-right: 10px;
-}
-
-.navbar-nav .nav-link {
-    text-decoration: none;
-    color: #000;
-    padding: 5px 10px;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #999;
-}
-
-.navbar-nav {
-    margin-left: 10; /* Видаляємо внутрішній відступ */
-}
-
-.nav-item {
-    margin-left: 20px; /* Встановлюємо відступ для кожного елемента */
-}
-
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar-wrapper {
-    display: flex;
-}
-
-.navbar-brand{
+.lead{
     font-size:1.25rem;
-    text-decoration:none;
-    white-space:nowrap
+    font-weight:300
 }
 
-.navbar-nav{
+/* list */
+
+.list-unstyled{
     list-style:none;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+    padding: 0;
 }
 
-.navbar-nav .nav-link{
-    color:rgba(0,0,0,0.95);
-    font-size:0.9rem;
-    text-decoration: none;
+.list-inline{
+    list-style:none;
 }
 
-.nav-item{
-    margin-right: 1rem;
-    margin-right: 10px;
-    margin-bottom: 10px; /* Відступ між елементами меню */
-}
-.navbar-nav .nav-link.active{
-    color:#4946dd;
-    font-weight:700
+.list-inline-item{
+    display: inline-block;
 }
 
-.hero {
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+
+.bg-dark{
+    background-color:#111 !important
 }
 
-.social-icon {
-    background: none;
-    color: #9dc6ef;
-    font-size: 1.5rem;
-    text-decoration: none;
+.social-icon{
+    background:#dee2e6;
+    color:#212529;
+    font-size:0.75rem;
+    text-decoration:none;
     width: 34px;
     height: 34px;
     display: block;
-    padding: 20px; /* Відступи з усіх сторін */
 }
 
 img {
     vertical-align: middle;
-    max-width: 100%;
-    height: auto;
 }
 
 .img-fluid {
@@ -169,69 +127,34 @@ img {
     max-width: 100%;
 }
 
-.product {
-    width: 250px;
-}
-
-#newArrivals {
-    background-image: url();
+.hero, .divider {
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 20px;
+    background-position: center center !important;
+    background-size: cover !important;
+    padding: 2rem 0;
 }
 
 .divider {
-    padding-top: 20px;
-    padding-bottom: 300px;
     background-attachment: fixed !important;
-    height: 5px;
-    background: linear-gradient(to right, #ADD8E6 5%, #87CEEB 17%, #4682B4 40%, #0000FF 85%, #191970 95%);
 }
 
-.footer {
-    background-color: #1b1e21;
-    padding: 50px 0;
-    color: #877a7a;
+.grad {
+    background-image: linear-gradient(to right bottom, 
+    rgb(0, 255, 0) 5%, 
+    rgb(30, 205, 10) 30%, 
+    rgb(40, 175, 50) 40%,  
+    rgb(50, 125, 50) 50%,
+    rgb(50, 85, 50) 75%,
+    rgb(5, 50, 0) 95%
+    );
 }
 
-.footer ul {
-    list-style: none;
-    padding: 0;
+.border-top {
+    border-top: #212529 3px solid;
 }
-
-.footer ul li {
-    margin-bottom: 10px;
-}
-
-.footer ul li a {
-    color: #8c8484;
-    text-decoration: none;
-}
-
-.footer form {
-    margin-top: 10px;
-}
-
-.footer input[type="email"],
-footer button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.footer input[type="email"] {
-    width: 20%;
-}
-
-.footer button {
-    background-color: #51585f;
-    color: #fff;
-    cursor: pointer;
-}
-
-.footer p {
-    color: #e6d7d7;
+/* rgba(2, 2, 2, 0.2)  */
+.bg-light {
+    background-color: rgb(2 2 2 / 0.2); 
 }
 
 .table {
@@ -240,153 +163,16 @@ footer button {
     margin-bottom: 1rem;
     vertical-align: top;
     border-collapse: collapse;
+    display: table;
 }
 
-.th, .td {
-    border: 1px solid #907676;
+thead, tbody, tfoot, tr, td, th {
+    border-style: solid;
     border-width: 0;
     border-color: inherit;
-    text-align: left;
-    padding: 8px;
 }
 
-.th {
-    background-color: #f2f2f2;
-    padding: 1rem;
-    font-weight: 700;
-    text-align: left;
-}
-
-.tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.img {
-    max-width: 10px;
-    height: auto;
-}
-
-/* Підвал */
-
-.footer {
-    background-color: #333; /* Колір футера */
-    color: #fff; /* Колір тексту у футері */
-    padding: 50px 0; /* Відступи у футері */
-}
-
-.footer h3 {
-    color: #fff; /* Колір заголовків у футері */
-}
-
-.footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer ul li {
-    margin-bottom: 10px;
-}
-
-.footer ul li a {
-    color: #f1eeee; /* Колір посилань у футері */
-    text-decoration: none;
-}
-
-.footer ul li a:hover {
-    color: #aa7575; /* Колір посилань у футері при наведенні */
-}
-
-.footer form {
-    margin-top: 10px;
-}
-
-.footer input[type="email"],
-.footer button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.footer input[type="email"] {
-    width: 70%; /* Ширина поля вводу email */
-}
-
-.footer button {
-    background-color: #007bff; /* Колір кнопки */
-    color: #fff; /* Колір тексту на кнопці */
-    cursor: pointer;
-}
-
-.footer p {
-    color: #ccc; /* Колір тексту в футері */
-}
-
-
-/* Table */
-.table {
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #212529;
-    border-collapse: collapse;
-  }
-  
-  .table th,
-  .table td {
-    padding: 0.75rem;
-    vertical-align: top;
-    border-top: 1px solid #dee2e6;
-  }
-  
-  .table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
-  }
-  
-  .table tbody + tbody {
-    border-top: 2px solid #dee2e6;
-  }
-  
-  .table .table {
-    background-color: #fff;
-  }
-  
-  /* Table Head */
-  .table-dark th {
-    color: #5b9b70;
-    background-color: #343a40;
-    border-color: #454d55;
-  }
-  
-  /* Table Body */
-  .table tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-  
-  .table-hover tbody tr:hover {
-    background-color: rgba(0, 0, 0, 0.075);
-  }
-  
-  /* Table Footer */
-  .table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  /* Table Responsive */
-  @media (max-width: 575.98px) {
-    .table-responsive-sm {
-      display: block;
-      width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      -ms-overflow-style: -ms-autohiding-scrollbar;
-    }
-    .table-responsive-sm > .table-bordered {
-      border: 0;
-    }
-  }
-
-  .table thead {
+.table thead {
     vertical-align: bottom;
 }
 
@@ -410,143 +196,101 @@ footer button {
     width: 28px;
     height: 28px;
     padding: 6px;
-    color: rgb(237, 165, 129);
+    color: red;
 }
 
-/* Сторінка Контакти */
-
-body {
-    font-family: "Labrada", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4; /* Колір фону сторінки */
-}
-
-header {
-    background-color: #333; /* Колір фону заголовка */
-    color: #fff; /* Колір тексту заголовка */
-    padding: 20px;
-    text-align: left;
-}
-
-main {
-    padding: 20px;
-}
-
-.contact-info {
-    background-color: #fff; /* Колір фону блоку контактної інформації */
-    padding: 0px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь блоку */
-}
-
-footer.footer {
-    background-color: #222; /* Колір фону футера */
-    color: #644c4c; /* Колір тексту у футері */
-    padding: 20px;
-    text-align: left;
-}
-
-.footer {
-    margin-top: 50px; /* Відступ зверху футера для головної сторінки */
-}
-
-.dark-footer {
-    background-color: #343a40; /* Чорний фон */
-    color: #ffffff; /* Білий колір тексту */
-    padding: 50px 0; /* Подушечка вниз і вгору для зручності читання */
-}
-
-
-/* Стилі для 10 уроку (flexbox)!!! */
-
-/* Стилізація контейнера з рядками та бічним баром */
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  
-  /* Стилізація бічного бару */
-  .sidebar {
-    background-color: none;
-  }
-  
-  /* Стилізація заголовка бічного бару */
-  .sidebar header {
-    margin-bottom: 10px;
-  }
-  
-  /* Стилізація контейнера з новинками */
-  .catalog {
-    background-color: #f2f7f3;
-    padding: 20px;
-    border: 1px solid #d5dfe9;
-    border-radius: 5px;
-  }
-  
-  /* Стилізація заголовка контейнера з новинками */
-  .catalog header {
-    margin-bottom: 10px;
-  }
-  
-  /* Стилізація продукту */
-  .product {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Стилізація зображення продукту */
-  .product img {
-    transition: transform 0.5s ease;
-  }
-  
-  /* Збільшення зображення продукту при наведенні */
-  .product:hover img {
-    transform: scale(1.1);
-  }
-  
-  /* Стилізація тексту */
-  .text-center {
-    text-align: center;
-  }
-  
-  /* Збільшення розміру заголовка на мобільних пристроях */
-  @media (max-width: 767px) {
-    .h2 {
-      font-size: 24px;
-    }
-  }
-  
-/* Гнучка сітка для колонок на різних розмірах екрану */
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem;
+
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+    /* clear: both; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    justify-content: space-around;
+}
+
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+
+hr {
+    margin: 1rem 0;
+    border: 0;
+    opacity: .2;
+    clear: both;
+}
+
+
+.col-3 {
+    /* display: inline-block; */
+    width: calc((100% / 12) * 3);
+    flex: 0 1 auto;
+}
+
+
+.col-4 {
+    /* display: inline-block; */
+    max-width: calc((100% / 12) * 4);
+    flex: 0 1 auto;
+}
+
+.col-6 {
+    width: calc((100% / 12) * 6);
+    flex: 1;
+}
+
+
+
 @media (min-width: 480px) {
+
     .col-xsm-3 {
         width: 100%;
         margin: 0 auto;
     }
+    
 }
 
+
 @media (min-width: 560px) {
+
     .col-sm-3 {
         width: calc((100% / 12) * 6);  
     }
+    
 }
 
+
 @media (min-width: 760px) {
+
     .col-md-3 {
         width: calc((100% / 12) * 5);  
     }
+    
 }
 
 @media (min-width: 960px) {
+
     .col-lg-3 {
         width: calc((100% / 12) * 4);  
     }
+    
 }
-
-/* Гнучка сітка для вмісту на різних розмірах екрану */
-.catalog, .sidebar {
+.catalog, .sidebar  {
    width: 100%;
 }
 
@@ -560,4 +304,405 @@ footer.footer {
         flex: .5;
         order: 2;
     }
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea.form-control {
+    resize: vertical; /* Дозволяє розтягувати поле вводу у вертикальному напрямку */
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2163a9;
+}
+
+/* nav */
+
+.navbar {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar .navbar-nav .nav-item {
+    margin-right: 1rem; /* Встановлюємо відступи між елементами меню */
+}
+
+.navbar .navbar-nav .nav-item:last-child {
+    margin-right: 0; /* Відключаємо відступ для останнього елемента */
+}
+
+.nav-item {
+color: #007bff;
+justify-content: space-between;
+}
+
+.navbar .container {
+    display: flex; /* Встановлюємо відображення в ряд */
+    align-items: center; /* Вирівнюємо елементи по вертикалі */
+}
+
+/* Add your imports and root variables here */
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ff5733; /* Example color, change as needed */
+}
+
+.navbar-nav, .toolbar-nav {
+    display: flex;
+    gap: 1rem; /* Adjust the gap as needed */
+}
+
+.navbar-nav a, .toolbar-nav a {
+    text-decoration: none;
+    color: #000; /* Change this to your preferred text color */
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav a:hover, .toolbar-nav a:hover {
+    color: #ff5733; /* Change this to your preferred hover color */
+}
+
+.nav-link {
+    color: blue; /* Задаємо колір тексту */
+  }
+  
+  .nav-link:hover {
+    color: red; /* Задаємо колір тексту при наведенні курсора миші */
+  }
+  
+
+.nav-link.active {
+    color: #007bff; /* Active link color */
+    font-weight: bold;
+}
+
+#toggler, .navbar label {
+    display: none;
+}
+
+@media (max-width: 45rem) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar-nav, .toolbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        display: none;
+        flex-direction: column;
+    }
+
+    #toggler:checked ~ .navbar-nav {
+        display: flex;
+    }
+}
+
+.product {
+    position: relative;
+}
+
+.product .icons {
+    position: absolute;
+    top: 2rem;
+    right:1rem;
+    z-index: -10;
+}
+
+.product:hover .icons {
+    z-index: 10;
+}
+
+.product:hover img{
+    /* transform: scale(1.2); */
+    /* transform: rotate(45deg) */
+    transform: scaleX(-1);
+    filter: contrast(150%);
+    transition: .3s linear;
+}
+
+.product .icons a{
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: #fff;
+    color: #111;
+}
+
+.product .icons a:hover {
+    color: var(--anchor-light-color);
+    background-color: var(--background-color);
+}
+
+.categories {
+    padding: 0;
+    list-style: none;
+}
+
+
+.categories li {
+    text-align: start;
+    padding: 0;
+}
+
+.categories li a {
+    text-decoration: none;
+    color: var(--anchor-color);
+    display: block;
+    width: 100%;
+    padding: .3rem 2rem;
+
+}
+
+.categories li a:hover {
+    background-color: salmon;
+    color: #fff;
+}
+
+.categories li:nth-child(2n-1) {
+    background-color: lightgray;
+}
+
+
+.price {
+    color: salmon !important;
+    font-weight: 700;
+}
+
+.price::before {
+    color: salmon;
+    font-weight: 700;
+    content: var(--currency-symbol);
+}
+
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    border-top:#6c757d 1px solid;
+    padding-top: 1.25rem;
+}
+
+.social-list li {
+    margin: .5rem;
+
+}
+.social-icon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: middle;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.social-list a:hover {
+    transition: cubic-bezier(0.23, 1, 0.320, 1) .3s;
+    transform: scale(1.2);
+    color: salmon;
+}
+
+.navbar-nav a{
+    position: relative;
+}
+.navbar-nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid salmon;
+    transition: .4s;
+}
+
+.navbar-nav a:hover::after {
+    width: 100%;
+}
+
+
+.btn {
+    /* background-color: var(--btn-background);
+    color: var(--btn-color);
+    padding: .5rem 1.5rem; */
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    transition: .3s;
+}
+
+
+.btn-insert {
+    width: 30%;
+    margin: 5px;
+    color: salmon;
+    font-size: 1.5rem;
+    background-color: white;
+    border: 1px solid salmon;
+    border-radius: 30px;
+    box-shadow:  0 0 0 0 salmon inset;
+    padding-left: 20px;
+
+}
+
+.btn-insert:hover {
+    color: white;
+    box-shadow:  300px 0 0 0 salmon inset;
+}
+
+/* blog */
+
+.blog {
+    margin: 4% auto;
+    text-align: center;
+
+}
+
+.blog-title {
+    margin: 0 .5rem 3rem;
+    font-size: 1.5rem;
+}
+
+.blog-item {
+    margin: 0 1.3rem 2rem;
+    min-height: 18rem;
+    background: white;
+    background-size: cover;
+    border-radius: 3%;
+    text-decoration: none;
+    box-shadow: 8px 14px 38px rgb(39 44 49 / 0.06), 1px 3px 8px rgb(39 44 49 / 0.04);
+    transition: .5s ease;
+}
+
+.blog-item:hover {
+   
+    box-shadow: 8px 28px 50px rgb(39 44 49 / 0.07), 1px 6px 12px rgb(39 44 49 / 0.05);
+    transition: .5s ease;
+    transform: translate3d(0, -1px, 0) scale(1.2);
+}
+.blog-item a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.picture {
+    height: 15rem;
+    margin: 0 0 1.2rem;
+    overflow: hidden;
+}
+
+.picture img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.post-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0 .5rem;
+}
+.post-content {
+    padding: 1.2rem;
+    font-size: .8rem;
+    text-align: left;
+    color: #999;
+}
+.reading-time {
+    color: #738a96;
+    font-size: .8rem;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    line-height: 2rem;
+}
+
+.blog-container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:900px) {
+
+    .blog-container {
+      
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media (max-width:600px) {
+
+    .blog-container {
+      
+        grid-template-columns: 1fr;
+    }
+    
 }

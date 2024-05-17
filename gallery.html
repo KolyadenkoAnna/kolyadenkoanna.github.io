@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <meta name="description" content="Головна сторінка персонального сайту">
+    <meta name="keywords" content="сайт, веб-сторінка, персональний, web page, personal website">
+    <meta name="google" content="notranslate">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-FqQmUWBeLSdICwWp3Gouc7Wr/hfHnyX9eLZIKjnPlRjvKJgx63n/BnDhHz8a6N+xBp2M5vQfnbZByKkeHfcmDw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        padding-top: 50px; /* Зміщує контент вниз, щоб не перекривати навігаційну панель */
+      }
+
+      .navbar {
+        background-color: #6f757a; /* Основний колір навігаційної панелі */
+      }
+
+      .offcanvas {
+        background-color: #3841ec; /* Темний фон для offcanvas */
+      }
+
+      .offcanvas .offcanvas-header, .offcanvas .offcanvas-body {
+        color: #ffffff; /* Білий текст в offcanvas */
+      }
+
+      .navbar-nav .nav-link {
+        color: #ffffff; /* Білий текст посилань в навігації */
+      }
+
+      .navbar-nav .nav-link.active {
+        color: #ffdd57; /* Активне посилання - жовтий колір */
+      }
+
+      .dropdown-menu {
+        background-color: #343a40; /* Темне тло для випадаючого меню */
+        color: #ffffff; /* Білий текст випадаючого меню */
+      }
+
+      .dropdown-menu .dropdown-item {
+        color: #ffffff; /* Білий текст пунктів меню */
+      }
+
+      .dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+        background-color: #151a1f; /* Синє тло при наведенні */
+      }
+
+      .container {
+        margin-top: 1rem;
+      }
+
+      .card {
+        margin-bottom: 1rem;
+      }
+
+      .card img {
+        width: 100%; /* Зображення займає всю ширину картки */
+        object-fit: cover; /* Зображення зберігає співвідношення сторін */
+      }
+
+      .btn-outline-danger, .btn-outline-success {
+        margin: 0.5rem 0.25rem; /* Відступи між кнопками */
+      }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mercury</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-primary" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Sidebar</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  <main>
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+          hero
+      </div> 
+      <div class="py-5 bg-body-tertiary">
+          <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="col">
+                      <div class="card" style="width: 18rem;">
+                          <img src="image/2image.jpg" class="mx-auto object-fit-cover border rounded" alt="..." height="250">
+                          <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                          <div class="btn-group">
+                              <a href="#" class="btn btn-sm btn-outline-danger">Card link</a>
+                              <a href="#" class="btn btn-sm btn-outline-success">Another link</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card" style="width: 18rem;">
+                          <img src="image/2image.jpg" class="mx-auto object-fit-cover border rounded" alt="..." height="250">
+                          <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                          <div class="btn-group">
+                              <a href="#" class="btn btn-sm btn-outline-danger">Card link</a>
+                              <a href="#" class="btn btn-sm btn-outline-success">Another link</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <div class="card" style="width: 18rem;">
+                          <img src="image/2image.jpg" class="mx-auto object-fit-cover border rounded" alt="..." height="250">
+                          <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                          <div class="btn-group">
+                              <a href="#" class="btn btn-sm btn-outline-danger">Card link</a>
+                              <a href="#" class="btn btn-sm btn-outline-success">Another link</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </main>
+
+  <!-- Футер сторінки -->
+  <footer class="bg-dark">
+      <div class="container">
+          <div class="row">
+              <!-- Меню -->
+              <div class="col-md-4">
+                  <h6 class="text-white">Меню</h6>
+                  <ul class="list-unstyled text-muted mb-0">
+                      <li class="mb-2"><a class="reset-anchor" href="about.html" target="_blank">Про нас</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="blog.html" target="_blank">Блог</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="contact.html" target="_blank">Контакти</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="https://ajax.systems/" target="_blank">FAQ</a></li>
+                  </ul>
+              </div>
+              <!-- Оплата -->
+              <div class="col-md-4">
+                  <h6 class="text-white">Оплата</h6>
+                  <ul class="list-unstyled text-muted">
+                      <li class="mb-2"><a class="reset-anchor" href="#">Мій обліковий запис</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="#">Відстеження замовлень</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="#">Оформити замовлення</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="#">Список бажань</a></li>
+                  </ul>
+              </div>
+              <!-- Контактна інформація та соціальні мережі -->
+              <div class="col-md-4">
+                  <h6 class="text-white">Контакти</h6>
+                  <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+1 123 456 789</a></p>
+                  <p class="text-muted">Закревського, Київ, Україна</p>
+                  <!-- Соціальні мережі -->
+                  <ul class="list-inline">
+                      <li class="list-inline-item">
+                          <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="social-icon" href="#"><i class="fab fa-youtube"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="social-icon" href="#"><i class="fab fa-google"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Авторські права та інформація про дизайн -->
+      <div class="container">
+          <div class="border border-top" style="border-color: #1d1d1d !important">
+              <div class="row">
+                  <div class="col-md-4">
+                      <p class="small text-muted">© 2024 Всі права захищені.</p>
+                  </div>
+                  <div class="col-md-4 text-right">
+                      <p class="small text-muted">Шаблон розроблений <a class="text-white reset-anchor" href="#">AnnaKO</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer> 
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -3,104 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна сторінка</title>
+    <title>Mercury</title>
     <meta name="description" content="Головна сторінка персонального сайту">
     <meta name="keywords" content="сайт, веб-сторінка, персональний, web page, personal website">
     <meta name="google" content="notranslate">
-    <link rel="stylesheet" href="/css/app/styles.css">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-FqQmUWBeLSdICwWp3Gouc7Wr/hfHnyX9eLZIKjnPlRjvKJgx63n/BnDhHz8a6N+xBp2M5vQfnbZByKkeHfcmDw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-PG5KlulS3xm9ijMGAOzWj/wNMXRF9l49OZ3PHJAV57fuN8DNrDLV2ybiwk9tv8oDUUZJXBnEtfmVMd2bUSvo8Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
-    <!-- Заголовок сторінки -->
-    <header>
-        <h1>Mercury - магазин зброї</h1>
-    </header>
+
+          <!-- Navbar brand-->
+          <a class="navbar-brand" href="index.html">Mercury</a>
+          <label for="toggler" class="fas fa-bars"></label>
+          <input type="checkbox" id="toggler">
 
     <!-- Навігаційна панель -->
     <nav class="navbar">
-        <div class="navbar-nav">
-            <a href="index.html" class="navbar-brand">Brand</a>
+        <div class="container">
+            <a href="index.html" class="navbar-brand"></a>
             <div class="navbar-wrapper">
                 <div class="navbar-nav">
                     <a href="index.html" class="nav-item text-uppercase active">Головна</a>
                     <a href="about.html" class="nav-item text-uppercase">Про нас</a>
                     <a href="catalog.html" class="nav-item text-uppercase">Каталог</a>
                     <a href="blog.html" class="nav-item text-uppercase">Blog</a>
+                    <a href="gallery.html" class="nav-item text-uppercase">Галерея</a>
                     <a href="contact.html" class="nav-item text-uppercase">Контакти</a>
                     <a href="login.html" class="nav-item text-uppercase">Вхід</a>
+                    <a class="nav-item" href="cart.html"><i class="nav-link text-uppercase fas fa-dolly-flatbed"></i></a>
+                    <a class="nav-item" href="#"><i class="nav-link text-uppercase far fa-heart"></i></a>
+                    <a class="nav-item" href="login.html"><i class="nav-link text-uppercase far fa-user"></i></a>
                 </div>
-            </div>
-        </div>
-        <div class="navbar-icons">
-            <div class="navbar-nav">
-                <a class="nav-item" href="cart.html"><i class="nav-link text-uppercase fas fa-dolly-flatbed"></i></a>
-                <a class="nav-item" href="#"><i class="nav-link text-uppercase far fa-heart"></i></a>
-                <a class="nav-item" href="login.html"><i class="nav-link text-uppercase far fa-user"></i></a>
             </div>
         </div>
     </nav> 
 
-    <!-- Hero slider-->
-    <section>
-        <div class="container" id="hero">
-            <div class="hero" style="background: url(image/6image.jpg) center/cover no-repeat;">
-                <div class="row text-center">
-                    <!-- Блок col по центру -->
-                    <div class="col-md-6 offset-md-3">
-                        <p class="h6 text-uppercase text-muted">Summer 2024</p>
-                        <h1 class="hero-heading title">The best weapons collection</h1>
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-muted subtitle">Захисти своє право на безпеку: будь завжди попереду</p>
-                            </div>
-                        </div>
-                        <a class="btn text" href="shop.html">Всі види зброї</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>    
+ <!-- Hero slider-->
+ <section class="hero" style="background: url(image/1fone.jpg)">
+    <div class="container">
+        <div class="row text-center">
+          <div class="col-6 float-left">
+            <p class="h6 text-uppercase text-muted">Summer 2024</p>
+            <h1 class="hero-heading title">Колекція зброї на всі смаки</h1>
+            <div class="row">
+              <div class="col">
+                <p class="text-muted subtitle">Перевершуйте очікування з нашим вибором зброї та аксесуарів. Наш магазин пропонує не лише найкращі продукти, але й бездоганне обслуговування, щоб ви почувалися впевнено і захищено. Забезпечте собі найвищий ступінь захисту та спокою думки з нашою допомогою. Наші експерти зроблять все можливе, щоб забезпечити вашу безпеку та задоволення. Переконайтеся, що ви готові до будь-яких викликів з нашою зброєю. Довіртеся нам - ваша безпека наш пріоритет.</p>
+              </div>
+            </div><a class="btn text" href="shop.html">Shop now</a>
+          </div>
 
-      <!-- Divider section-->
-    <section class="divider" style="background: url(image/1fone.jpg) center/100% no-repeat;">
-        <div class="container" id="divider">
-            <div class="row text-center">
-                <!-- Блок col справа -->
-                <div class="col-md-6 offset-md-3">
-                    <p class="h6 text-uppercase text-muted">NON Content</p>
-                    <h1 class="hero-heading title">The best weapons collection</h1>
-                    <div class="row">
-                        <div class="col">
-                            <p class="text-muted subtitle">Захисти своє право на безпеку: будь завжди попереду</p>
-                        </div>
-                    </div>
-                    <a class="btn text" href="shop.html">Shop now</a>
-                </div>
-            </div>
+          <div class="col-6 float-right"></div>
         </div>
-    </section>
+    </div>
+  </section>
+  <hr>
+  <!-- New arrivals-->
+  <main class="py-5">
+    <div class="container">
+      
+      <header class="text-center">
+        <h2 class="">New arrivals</h2>
+        <p class="text-muted">Browse the Newest Products</p>
+      </header>
+      
+      <div class="container" id="newArrivals">
+        <div class="wrapper">
+
+          <article class="">
+            
+            <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
+              <img class="img-fluid" src="image/12image.jpg" alt="Round grey hanging decor">
+            </a>
+             
+            </div>
+
+            <h6 class="text-center"><a class="reset-anchor" href="detail.html">Round grey hanging decor</a></h6>
+            <p class="text-center text-muted">$22.00</p>
+
+          </article>
+          
+        </div>
+        <!-- prev next -->
+        
+      </div>
+    </div>
+  </main>
+
+  <!-- Divider section-->
+  <section class="divider" style="background: url(image/6image.jpg)">
+    <div   class="container">
+      <div class="row">
+        <div class="col-6">
+
+        </div>
+        <div class="col-6">
+          <p class="h6 text-uppercase text-muted">Summer 2024</p>
+          <h1 class="hero-heading title">Захищайте своє право на безпеку</h1>
+          
+              <p class="text-muted subtitle">Спритність. Сила. Захист.</p>
+              <a class="btn text" href="shop.html">Shop now</a>
+        </div>
+          
+        </div>
+      </div>
+</section>
 
      <!-- Футер сторінки -->
      <footer class="bg-dark">
         <div class="container">
             <div class="row">
-<!-- Меню -->
-<div class="col-md-4">
-    <h6 class="text-white">Меню</h6>
-    <ul class="list-unstyled text-muted mb-0">
-        <li class="mb-2"><a class="reset-anchor" href="about.html" target="_blank">Про нас</a></li>
-        <li class="mb-2"><a class="reset-anchor" href="blog.html" target="_blank">Блог</a></li>
-        <li class="mb-2"><a class="reset-anchor" href="contact.html" target="_blank">Контакти</a></li>
-        <li class="mb-2"><a class="reset-anchor" href="https://ajax.systems/" target="_blank">FAQ</a></li>
-    </ul>
-</div>
+                <!-- Меню -->
+                <div class="col-md-4">
+                    <h6 class="text-white">Меню</h6>
+                    <ul class="list-unstyled text-muted mb-0">
+                        <li class="mb-2"><a class="reset-anchor" href="about.html" target="_blank">Про нас</a></li>
+                        <li class="mb-2"><a class="reset-anchor" href="blog.html" target="_blank">Блог</a></li>
+                        <li class="mb-2"><a class="reset-anchor" href="contact.html" target="_blank">Контакти</a></li>
+                        <li class="mb-2"><a class="reset-anchor" href="https://ajax.systems/" target="_blank">FAQ</a></li>
+                    </ul>
+                </div>
                 <!-- Оплата -->
                 <div class="col-md-4">
                     <h6 class="text-white">Оплата</h6>
@@ -152,3 +180,4 @@
     </footer>    
 </body>
 </html>
+

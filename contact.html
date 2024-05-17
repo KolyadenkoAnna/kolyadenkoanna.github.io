@@ -13,97 +13,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <style>
-        /* Стилі для графічної секції */
-        .graphic-section {
-            background-image: url(image/8image.jpg); /* Додайте ваше зображення */
-            background-size: cover; /* Розмір зображення */
-            background-position: center; /* Вирівняти зображення по центру */
-            padding: 100px; /* Відступи відгори і знизу */
-            color: #fff; /* Колір тексту */
-            text-align: center; /* Вирівнювання тексту по центру */
-        }
-
-        /* Стилі для футера */
-        .footer {
-            background-color: #333; /* Колір фону футера */
-            color: #fff; /* Колір тексту */
-            padding: 20px; /* Відступи */
-            text-align: center; /* Вирівнювання тексту по центру */
-        }
-
-        .footer {
-    margin-top: 80px; /* Відступ зверху футера */
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 16px;
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+   
 </head>
 <body>
+          <!-- Navbar brand-->
+          <a class="navbar-brand" href="index.html">brand</a>
+          <label for="toggler" class="fas fa-bars"></label>
+          <input type="checkbox" id="toggler">
+
     <!-- Навігаційна панель -->
     <nav class="navbar">
-        <div class="navbar-nav">
+        <div class="container">
             <a href="index.html" class="navbar-brand"></a>
             <div class="navbar-wrapper">
                 <div class="navbar-nav">
-                    <a href="index.html" class="nav-item text-uppercase">Головна</a>
+                    <a href="index.html" class="nav-item text-uppercase active">Головна</a>
                     <a href="about.html" class="nav-item text-uppercase">Про нас</a>
                     <a href="catalog.html" class="nav-item text-uppercase">Каталог</a>
                     <a href="blog.html" class="nav-item text-uppercase">Blog</a>
-                    <a href="contact.html" class="nav-item text-uppercase active">Контакти</a>
+                    <a href="contact.html" class="nav-item text-uppercase">Контакти</a>
                     <a href="login.html" class="nav-item text-uppercase">Вхід</a>
+                    <a class="nav-item" href="cart.html"><i class="nav-link text-uppercase fas fa-dolly-flatbed"></i></a>
+                    <a class="nav-item" href="#"><i class="nav-link text-uppercase far fa-heart"></i></a>
+                    <a class="nav-item" href="login.html"><i class="nav-link text-uppercase far fa-user"></i></a>
                 </div>
             </div>
         </div>
-    </nav>  
+    </nav> 
 
     <!-- Заголовок -->
     <header>
@@ -150,26 +86,68 @@
         </div>
     </main>
 
-    <!-- Основний контент -->
-    <main>
-        <section class="contact-info">
-            <h2>Зв'яжіться з нами</h2>
-            <p>Телефон: +123456789</p>
-            <p>Email: example@example.com</p>
-            <p>Адреса: вул. Прикладна, 1, м. Київ, 12345</p>
-        </section>
-    </main>
-
-    <!-- Графічна секція -->
-    <div class="graphic-section">
-        <h2>Графічна секція</h2>
-        <p>Тут може бути графічний контент</p>
+ <!-- Футер сторінки -->
+ <footer class="bg-dark">
+    <div class="container">
+        <div class="row">
+<!-- Меню -->
+<div class="col-md-4">
+<h6 class="text-white">Меню</h6>
+<ul class="list-unstyled text-muted mb-0">
+    <li class="mb-2"><a class="reset-anchor" href="about.html" target="_blank">Про нас</a></li>
+    <li class="mb-2"><a class="reset-anchor" href="blog.html" target="_blank">Блог</a></li>
+    <li class="mb-2"><a class="reset-anchor" href="contact.html" target="_blank">Контакти</a></li>
+    <li class="mb-2"><a class="reset-anchor" href="https://ajax.systems/" target="_blank">FAQ</a></li>
+</ul>
+</div>
+            <!-- Оплата -->
+            <div class="col-md-4">
+                <h6 class="text-white">Оплата</h6>
+                <ul class="list-unstyled text-muted">
+                    <li class="mb-2"><a class="reset-anchor" href="#">Мій обліковий запис</a></li>
+                    <li class="mb-2"><a class="reset-anchor" href="#">Відстеження замовлень</a></li>
+                    <li class="mb-2"><a class="reset-anchor" href="#">Оформити замовлення</a></li>
+                    <li class="mb-2"><a class="reset-anchor" href="#">Список бажань</a></li>
+                </ul>
+            </div>
+            <!-- Контактна інформація та соціальні мережі -->
+            <div class="col-md-4">
+                <h6 class="text-white">Контакти</h6>
+                <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+1 123 456 789</a></p>
+                <p class="text-muted">Закревського, Київ, Україна</p>
+               
+                <!-- Соціальні мережі -->
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-icon" href="#"><i class="fab fa-google"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <!-- Футер -->
-    <footer class="footer">
-        <p>© 2024 Всі права захищені.</p>
-        <p>Шаблон розроблений <a href="#">AnnKO</a>.</p>
-    </footer>
+    <!-- Авторські права та інформація про дизайн -->
+    <div class="container">
+        <div class="border border-top" style="border-color: #1d1d1d !important">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="small text-muted">© 2024 Всі права захищені.</p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p class="small text-muted">Шаблон розроблений <a class="text-white reset-anchor" href="#">AnnaKO</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>    
 </body>
 </html>
