@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна сторінка</title>
+    <title>Галерея</title>
     <meta name="description" content="Головна сторінка персонального сайту">
     <meta name="keywords" content="сайт, веб-сторінка, персональний, web page, personal website">
     <meta name="google" content="notranslate">
@@ -25,7 +25,7 @@
       }
 
       .offcanvas {
-        background-color: #3841ec; /* Темний фон для offcanvas */
+        background-color: #9497dd; /* Темний фон для offcanvas */
       }
 
       .offcanvas .offcanvas-header, .offcanvas .offcanvas-body {
@@ -69,8 +69,15 @@
       .btn-outline-danger, .btn-outline-success {
         margin: 0.5rem 0.25rem; /* Відступи між кнопками */
       }
+
+      .btn-bold {
+    font-weight: bold;
+}
+
     </style>
+
 </head>
+
 <body>
   <nav class="navbar navbar-dark bg-primary fixed-top">
       <div class="container-fluid">
@@ -115,9 +122,29 @@
   </nav>
 
   <main>
+        <!-- Графічний блок -->
+        <section class="hero" style="background: url(image/6image.jpg)">
+          <div class="container">
+              <div class="row text-center">
+                  <div class="col-md-6"> <!-- На екранах `md` та вище блок буде займати половину ширини контейнера -->
+                      <p class="h6 text-uppercase text-muted"></p>
+                      <h1 class="hero-heading title">Колекція зброї на всі смаки</h1>
+                      <div class="row">
+                          <div class="col">
+                              <p class="text-muted subtitle">Перевершуйте очікування з нашим вибором зброї та аксесуарів. Наш магазин пропонує не лише найкращі продукти, але й бездоганне обслуговування, щоб ви почувалися впевнено і захищено. Забезпечте собі найвищий ступінь захисту та спокою думки з нашою допомогою. Наші експерти зроблять все можливе, щоб забезпечити вашу безпеку та задоволення. Переконайтеся, що ви готові до будь-яких викликів з нашою зброєю. Довіртеся нам - ваша безпека наш пріоритет.</p>
+                          </div>
+                      </div>
+                      <a class="btn text" href="shop.html">Shop now</a>
+                  </div>
+                  <div class="col-md-6"></div> <!-- Порожній блок для вирівнювання тексту -->
+              </div>
+          </div>
+      </section>
+
       <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-          hero
+        Перевершіть очікування з нашим вибором зброї та аксесуарів. Наш магазин пропонує не лише найкращі продукти, але й бездоганне обслуговування, щоб ви почувалися впевнено і захищено. Забезпечте собі найвищий ступінь захисту та спокою думки з нашою допомогою. Наші експерти зроблять все можливе, щоб забезпечити вашу безпеку та задоволення. Переконайтеся, що ви готові до будь-яких викликів з нашою зброєю. Довіртеся нам - ваша безпека наш пріоритет.
       </div> 
+      
       <div class="py-5 bg-body-tertiary">
           <div class="container">
               <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">

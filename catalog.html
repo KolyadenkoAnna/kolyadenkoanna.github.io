@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
@@ -8,40 +8,60 @@
     <meta name="keywords" content="сайт, веб-сторінка, персональний, web page, personal website">
     <meta name="google" content="notranslate">
     <link rel="stylesheet" href="/css/app/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-FqQmUWBeLSdICwWp3Gouc7Wr/hfHnyX9eLZIKjnPlRjvKJgx63n/BnDhHz8a6N+xBp2M5vQfnbZByKkeHfcmDw==" crossorigin="anonymous" />
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
 
-          <!-- Navbar brand-->
-          <a class="navbar-brand" href="index.html">Mercury</a>
-          <label for="toggler" class="fas fa-bars"></label>
-          <input type="checkbox" id="toggler">
+    <!-- NAVBAR-->
+    <header class="navbar navbar-light bg-white">
+      
+      <!-- Navbar brand-->
+      <a class="navbar-brand" href="index.html">Mercury</a>
+      <label for="toggler" class="fas fa-bars"></label>
+      <input type="checkbox" id="toggler">
 
-    <!-- Навігаційна панель -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand"></a>
-            <div class="navbar-wrapper">
-                <div class="navbar-nav">
-                    <a href="index.html" class="nav-item text-uppercase active">Головна</a>
-                    <a href="about.html" class="nav-item text-uppercase">Про нас</a>
-                    <a href="catalog.html" class="nav-item text-uppercase">Каталог</a>
-                    <a href="blog.html" class="nav-item text-uppercase">Blog</a>
-                    <a href="contact.html" class="nav-item text-uppercase">Контакти</a>
-                    <a href="login.html" class="nav-item text-uppercase">Вхід</a>
-                    <a class="nav-item" href="cart.html"><i class="nav-link text-uppercase fas fa-dolly-flatbed"></i></a>
-                    <a class="nav-item" href="#"><i class="nav-link text-uppercase far fa-heart"></i></a>
-                    <a class="nav-item" href="login.html"><i class="nav-link text-uppercase far fa-user"></i></a>
-                </div>
-            </div>
+        <!-- Navbar menu left-->
+        <nav class="navbar-nav">
+          <a class="nav-link text-uppercase" href="index.html">Головна</a>
+          <a class="nav-link text-uppercase active" href="catalog.html">Каталог</a>
+          <a class="nav-link text-uppercase" href="blog.html">Blog</a>
+          <a class="nav-link text-uppercase" href="gallery.html">Галерея</a>
+          <a class="nav-link text-uppercase" href="contact.html">Контакти</a>
+          <a class="nav-link text-uppercase" href="about.html">Про нас</a>
+        </nav>
+        <!-- Navbar menu right-->
+        <nav class="toolbar-nav">
+          <a class="nav-link text-uppercase fas fa-dolly-flatbed" href="cart.html"></a>
+          <a class="nav-link text-uppercase far fa-heart" href="#"></a>
+          <a class="nav-link text-uppercase far fa-user" href="login.html"></a>
+        </nav>
+     
+  </header> 
+
+ <!-- Hero slider-->
+ <section class="hero" style="background: url(image/1fone.jpg)">
+    <div class="container">
+        <div class="row text-center">
+          <div class="col-6 float-left">
+            <p class="h6 text-uppercase text-muted">Summer 2024</p>
+            <h1 class="hero-heading title">Колекція зброї на всі смаки</h1>
+            <div class="row">
+              <div class="col">
+                <p class="text-muted subtitle">Перевершуйте очікування з нашим вибором зброї та аксесуарів. Наш магазин пропонує не лише найкращі продукти, але й бездоганне обслуговування, щоб ви почувалися впевнено і захищено. Забезпечте собі найвищий ступінь захисту та спокою думки з нашою допомогою. Наші експерти зроблять все можливе, щоб забезпечити вашу безпеку та задоволення. Переконайтеся, що ви готові до будь-яких викликів з нашою зброєю. Довіртеся нам - ваша безпека наш пріоритет.</p>
+              </div>
+            </div><a class="btn text" href="shop.html">Shop now</a>
+          </div>
+
+          <div class="col-6 float-right"></div>
         </div>
-    </nav> 
+    </div>
+  </section>
+  <hr>
 
     <div class="container">
       <div class="row">
@@ -86,7 +106,6 @@
                     <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
                       <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
                     </a>
-                    
                     </div>
   
                     <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
@@ -97,7 +116,6 @@
                     <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
                       <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
                     </a>
-                    
                     </div>
   
                     <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
@@ -108,7 +126,6 @@
                     <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
                       <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
                     </a>
-                    
                     </div>
   
                     <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
@@ -119,160 +136,76 @@
                     <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
                       <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
                     </a>
-                    
                     </div>
   
-                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
-                    <p class="text-center text-muted">$50.00</p>
                   </article>
-                  <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
-                    
-                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
-                      <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
-                    </a>
-                    
-                    </div>
-  
-                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
-                    <p class="text-center text-muted">$50.00</p>
-                  </article>
-                  <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
-                    
-                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
-                      <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
-                    </a>
-                    
-                    </div>
-  
-                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
-                    <p class="text-center text-muted">$50.00</p>
-                  </article>
-                  <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
-                    
-                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
-                      <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
-                    </a>
-                    
-                    </div>
-  
-                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
-                    <p class="text-center text-muted">$50.00</p>
-                  </article>
-                  <article class="col-xsm-3 col-sm-3 col-md-3 col-lg-3">
-                    
-                    <div class="product"><span class="badge">New Arrival</span><a href="detail.html">
-                      <img class="img-fluid" src="image/8image.jpg" alt="Сool winter knife">
-                    </a>
-                    
-                    </div>
-  
-                    <h6 class="text-center"><a class="reset-anchor" href="detail.html">Сool winter knife</a></h6>
-                    <p class="text-center text-muted">$50.00</p>
-                  </article>
-
-    <div class="container">
-        <h1>Картки товарів</h1>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="image/8image.jpg" class="card-img-top" alt="Товар 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Товар 1</h5>
-                        <p class="card-text">Опис товару</p>
-                        <a href="#" class="btn btn-primary">Детальніше</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="image/12image.jpg" class="card-img-top" alt="Товар 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Товар 2</h5>
-                        <p class="card-text">Опис товару</p>
-                        <a href="#" class="btn btn-primary">Детальніше</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="image/5image.jpg" class="card-img-top" alt="Товар 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Товар 3</h5>
-                        <p class="card-text">Опис товару</p>
-                        <a href="#" class="btn btn-primary">Детальніше</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Додавайте більше блоків карток товарів за потреби -->
-        </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
- <!-- Футер сторінки -->
- <footer class="bg-dark">
-  <div class="container">
-      <div class="row">
-<!-- Меню -->
-<div class="col-md-4">
-<h6 class="text-white">Меню</h6>
-<ul class="list-unstyled text-muted mb-0">
-  <li class="mb-2"><a class="reset-anchor" href="about.html" target="_blank">Про нас</a></li>
-  <li class="mb-2"><a class="reset-anchor" href="blog.html" target="_blank">Блог</a></li>
-  <li class="mb-2"><a class="reset-anchor" href="contact.html" target="_blank">Контакти</a></li>
-  <li class="mb-2"><a class="reset-anchor" href="https://ajax.systems/" target="_blank">FAQ</a></li>
-</ul>
-</div>
-          <!-- Оплата -->
-          <div class="col-md-4">
-              <h6 class="text-white">Оплата</h6>
-              <ul class="list-unstyled text-muted">
-                  <li class="mb-2"><a class="reset-anchor" href="#">Мій обліковий запис</a></li>
-                  <li class="mb-2"><a class="reset-anchor" href="#">Відстеження замовлень</a></li>
-                  <li class="mb-2"><a class="reset-anchor" href="#">Оформити замовлення</a></li>
-                  <li class="mb-2"><a class="reset-anchor" href="#">Список бажань</a></li>
-              </ul>
-          </div>
-          <!-- Контактна інформація та соціальні мережі -->
-          <div class="col-md-4">
-              <h6 class="text-white">Контакти</h6>
-              <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+1 123 456 789</a></p>
-              <p class="text-muted">Закревського, Київ, Україна</p>
-             
-              <!-- Соціальні мережі -->
-              <ul class="list-inline">
-                  <li class="list-inline-item">
-                      <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                      <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                      <a class="social-icon" href="#"><i class="fab fa-youtube"></i></a>
-                  </li>
-                  <li class="list-inline-item">
-                      <a class="social-icon" href="#"><i class="fab fa-google"></i></a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </div>
-
-  <!-- Авторські права та інформація про дизайн -->
-  <div class="container">
-      <div class="border border-top" style="border-color: #1d1d1d !important">
+     <!-- Футер сторінки -->
+     <footer class="bg-dark">
+      <div class="container">
           <div class="row">
+              <!-- Меню -->
               <div class="col-md-4">
-                  <p class="small text-muted">© 2024 Всі права захищені.</p>
+                  <h6 class="text-white">Меню</h6>
+                  <ul class="list-unstyled text-muted mb-0">
+                      <li class="mb-2"><a class="reset-anchor" href="about.html" target="_blank">Про нас</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="blog.html" target="_blank">Блог</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="contact.html" target="_blank">Контакти</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="https://ajax.systems/" target="_blank">FAQ</a></li>
+                  </ul>
               </div>
-              <div class="col-md-4 text-right">
-                  <p class="small text-muted">Шаблон розроблений <a class="text-white reset-anchor" href="#">AnnaKO</a></p>
+              <!-- Оплата -->
+              <div class="col-md-4">
+                  <h6 class="text-white">Оплата</h6>
+                  <ul class="list-unstyled text-muted">
+                      <li class="mb-2"><a class="reset-anchor" href="#">Мій обліковий запис</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="#">Відстеження замовлень</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="#">Оформити замовлення</a></li>
+                      <li class="mb-2"><a class="reset-anchor" href="#">Список бажань</a></li>
+                  </ul>
+              </div>
+              <!-- Контактна інформація та соціальні мережі -->
+              <div class="col-md-4">
+                  <h6 class="text-white">Контакти</h6>
+                  <p class="lead text-white"><a class="reset-anchor" href="tel:+1 123 456 789">+1 123 456 789</a></p>
+                  <p class="text-muted">Закревського, Київ, Україна</p>
+                 
+                  <!-- Соціальні мережі -->
+                  <ul class="list-inline">
+                      <li class="list-inline-item">
+                          <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="social-icon" href="#"><i class="fab fa-youtube"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a class="social-icon" href="#"><i class="fab fa-google"></i></a>
+                      </li>
+                  </ul>
               </div>
           </div>
       </div>
-  </div>
-</footer>      
+  
+      <!-- Авторські права та інформація про дизайн -->
+      <div class="container">
+          <div class="border border-top" style="border-color: #1d1d1d !important">
+              <div class="row">
+                  <div class="col-md-4">
+                      <p class="small text-muted">© 2024 Всі права захищені.</p>
+                  </div>
+                  <div class="col-md-4 text-right">
+                      <p class="small text-muted">Шаблон розроблений <a class="text-white reset-anchor" href="#">AnnaKO</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>   
 </body>
 </html>

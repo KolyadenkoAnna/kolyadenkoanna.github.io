@@ -195,8 +195,7 @@ thead, tbody, tfoot, tr, td, th {
     padding: 6px;
     color: red;
 }
-
-
+  
 
 .container {
     width: 100%;
@@ -356,6 +355,13 @@ hr {
     z-index: 1000;
 }
 
+.nav-link {
+    color: blue; /* Задаємо колір тексту */
+  }
+  
+  .nav-link:hover {
+    color: red; /* Задаємо колір тексту при наведенні курсора миші */
+  }
 
 .navbar-brand{
     font-size:1.25rem;

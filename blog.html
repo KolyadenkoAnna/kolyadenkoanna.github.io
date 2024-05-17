@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Блог</title>
@@ -14,34 +14,57 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,100..900;1,100..900&family=M+PLUS+1+Code:wght@100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
-          <!-- Navbar brand-->
-          <a class="navbar-brand" href="index.html">Mercury</a>
-          <label for="toggler" class="fas fa-bars"></label>
-          <input type="checkbox" id="toggler">
 
-    <!-- Навігаційна панель -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="navbar-brand"></a>
-            <div class="navbar-wrapper">
-                <div class="navbar-nav">
-                    <a href="index.html" class="nav-item text-uppercase active">Головна</a>
-                    <a href="about.html" class="nav-item text-uppercase">Про нас</a>
-                    <a href="catalog.html" class="nav-item text-uppercase">Каталог</a>
-                    <a href="blog.html" class="nav-item text-uppercase">Blog</a>
-                    <a href="contact.html" class="nav-item text-uppercase">Контакти</a>
-                    <a href="login.html" class="nav-item text-uppercase">Вхід</a>
-                    <a class="nav-item" href="cart.html"><i class="nav-link text-uppercase fas fa-dolly-flatbed"></i></a>
-                    <a class="nav-item" href="#"><i class="nav-link text-uppercase far fa-heart"></i></a>
-                    <a class="nav-item" href="login.html"><i class="nav-link text-uppercase far fa-user"></i></a>
-                </div>
-            </div>
+<body>
+
+    <!-- NAVBAR-->
+    <header class="navbar navbar-light bg-white">
+      
+      <!-- Navbar brand-->
+      <a class="navbar-brand" href="index.html">Mercury</a>
+      <label for="toggler" class="fas fa-bars"></label>
+      <input type="checkbox" id="toggler">
+
+        <!-- Navbar menu left-->
+        <nav class="navbar-nav">
+          <a class="nav-link text-uppercase" href="index.html">Головна</a>
+          <a class="nav-link text-uppercase" href="catalog.html">Каталог</a>
+          <a class="nav-link text-uppercase active" href="blog.html">Blog</a>
+          <a class="nav-link text-uppercase" href="gallery.html">Галерея</a>
+          <a class="nav-link text-uppercase" href="contact.html">Контакти</a>
+          <a class="nav-link text-uppercase" href="about.html">Про нас</a>
+        </nav>
+        <!-- Navbar menu right-->
+        <nav class="toolbar-nav">
+          <a class="nav-link text-uppercase fas fa-dolly-flatbed" href="cart.html"></a>
+          <a class="nav-link text-uppercase far fa-heart" href="#"></a>
+          <a class="nav-link text-uppercase far fa-user" href="login.html"></a>
+        </nav>
+     
+  </header> 
+
+ <!-- Hero slider-->
+ <section class="hero" style="background: url(image/1fone.jpg)">
+    <div class="container">
+        <div class="row text-center">
+          <div class="col-6 float-left">
+            <p class="h6 text-uppercase text-muted">Summer 2024</p>
+            <h1 class="hero-heading title">Колекція зброї на всі смаки</h1>
+            <div class="row">
+              <div class="col">
+                <p class="text-muted subtitle">Перевершуйте очікування з нашим вибором зброї та аксесуарів. Наш магазин пропонує не лише найкращі продукти, але й бездоганне обслуговування, щоб ви почувалися впевнено і захищено. Забезпечте собі найвищий ступінь захисту та спокою думки з нашою допомогою. Наші експерти зроблять все можливе, щоб забезпечити вашу безпеку та задоволення. Переконайтеся, що ви готові до будь-яких викликів з нашою зброєю. Довіртеся нам - ваша безпека наш пріоритет.</p>
+              </div>
+            </div><a class="btn text" href="shop.html">Shop now</a>
+          </div>
+
+          <div class="col-6 float-right"></div>
         </div>
-    </nav> 
+    </div>
+  </section>
+  <hr>
     
     <main class="blog">
-        <div class="blog-title"><h2>Our Latest Blogs</h2></div>
+        <div class="blog-title"><h2>Our Blogs</h2></div>
   
         <div class="blog-container">
           <div class="blog-item">
